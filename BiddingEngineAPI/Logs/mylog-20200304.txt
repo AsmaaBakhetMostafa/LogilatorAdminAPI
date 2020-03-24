@@ -1,0 +1,578 @@
+2020-03-04T17:13:13.7485880+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-04T17:14:46.7536423+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-04T17:14:49.3484935+02:00  [INF] Executed DbCommand ("353"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-04T17:14:49.6781120+02:00  [INF] Executed DbCommand ("308"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-04T17:14:49.9685582+02:00  [INF] Executed DbCommand ("282"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-04T17:14:50.2765500+02:00  [INF] Executed DbCommand ("305"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-04T17:14:50.6378971+02:00  [INF] Executed DbCommand ("245"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-04T17:14:50.7252483+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-04T17:14:50.8552581+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-04T17:14:51.6124065+02:00  [INF] Executed DbCommand ("281"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-04T17:14:51.9093813+02:00  [INF] Executed DbCommand ("273"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-04T17:14:52.1633227+02:00  [INF] Executed DbCommand ("248"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-04T17:14:54.1805560+02:00 80000309-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-04T17:14:54.5025757+02:00 80000309-0006-fc00-b63f-84710c7967bb [INF] Request finished in 323.4027ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-04T17:14:54.5642915+02:00 800001b8-0002-f800-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-04T17:14:54.8238105+02:00 800001b8-0002-f800-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-04T17:14:54.8244624+02:00 800001b8-0002-f800-b63f-84710c7967bb [INF] Request finished in 260.0733ms 0 text/css (791a596a)
+2020-03-04T17:14:55.0345740+02:00 8000030a-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-04T17:14:55.0464232+02:00 8000030a-0006-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-04T17:14:55.0477524+02:00 8000030a-0006-fc00-b63f-84710c7967bb [INF] Request finished in 14.505ms 200 image/png (791a596a)
+2020-03-04T17:14:55.2073303+02:00 8000030b-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-04T17:14:55.5133883+02:00 8000030b-0006-fc00-b63f-84710c7967bb [INF] Request finished in 306.314ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-04T17:15:38.3030113+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Bidding/8 application/json-patch+json 96 (ca22a1cb)
+2020-03-04T17:15:38.3100570+02:00 8000030c-0006-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-04T17:15:38.3155480+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-04T17:15:39.9149428+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)"' (500cc934)
+2020-03-04T17:15:40.2013105+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Put\", controller = \"Bidding\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Bid.BidModel] Put(Int32, BiddingEngineAPI.ApiModels.Bid.EditBidModel)" on controller "BiddingEngineAPI.Controllers.BiddingController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-04T17:15:41.7507350+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("372"ms) [Parameters=["@__bidId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CreateDate], [t].[FormId], [t].[IsApproved], [t].[RequestId], [t].[UserId], [t].[UserTypeId], [t0].[Id], [t0].[BidId], [t0].[FormFieldId], [t0].[Value], [t0].[Id0], [t0].[CreateDate], [t0].[FiledType], [t0].[FormId], [t0].[HasChild], [t0].[HasParent], [t0].[IsActive], [t0].[IsRequired], [t0].[NameAr], [t0].[NameEn], [t0].[Order], [t0].[ParentId]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[CreateDate], [b].[FormId], [b].[IsApproved], [b].[RequestId], [b].[UserId], [b].[UserTypeId]
+    FROM [Bids] AS [b]
+    WHERE [b].[Id] = @__bidId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [b0].[Id], [b0].[BidId], [b0].[FormFieldId], [b0].[Value], [f].[Id] AS [Id0], [f].[CreateDate], [f].[FiledType], [f].[FormId], [f].[HasChild], [f].[HasParent], [f].[IsActive], [f].[IsRequired], [f].[NameAr], [f].[NameEn], [f].[Order], [f].[ParentId]
+    FROM [BidDetails] AS [b0]
+    LEFT JOIN [FormFileds] AS [f] ON [b0].[FormFieldId] = [f].[Id]
+) AS [t0] ON [t].[Id] = [t0].[BidId]
+ORDER BY [t].[Id], [t0].[Id]" (0723d8ff)
+2020-03-04T17:15:43.1374984+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("365"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [BidDetails]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:15:43.4196985+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("260"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [BidDetails]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:15:43.8309791+02:00 8000030c-0006-fc00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("376"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BidDetails] ([BidId], [FormFieldId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [BidDetails]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-03-04T17:15:44.6574895+02:00 8000030c-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_BidDetails_FormFileds_FormFieldId\". The conflict occurred in database \"DB_A55EAB_BiddingEngine\", table \"dbo.FormFileds\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_BidDetails_FormFileds_FormFieldId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.FormFileds", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 109
+2020-03-04T17:15:45.3204299+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)" in 5109.7489ms (afa2e885)
+2020-03-04T17:15:45.3296526+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)"' (99874f2b)
+2020-03-04T17:15:45.4070409+02:00 8000030c-0006-fc00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_BidDetails_FormFileds_FormFieldId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.FormFileds", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 109
+   at BiddingEngineAPI.Controllers.BiddingController.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-03-04T17:15:45.5173499+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Source:[127.0.0.1] 
+                                                     Request: PUT http localhost:5000/api/Bidding/8  {"formId":0,"userId":0,"bidDetails":[{"id":0,"formFieldId":0,"value":"string","fieldTypeId":0}]} 
+                                                     Responded with [500] in 7147ms (e300e57e)
+2020-03-04T17:15:45.5341166+02:00 8000030c-0006-fc00-b63f-84710c7967bb [INF] Request finished in 7232.1941ms 500 application/json (791a596a)
+2020-03-04T17:16:10.3246451+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Bidding/8 application/json-patch+json 96 (ca22a1cb)
+2020-03-04T17:16:10.3282639+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-04T17:16:10.3556167+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)"' (500cc934)
+2020-03-04T17:16:10.3571216+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Put\", controller = \"Bidding\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Bid.BidModel] Put(Int32, BiddingEngineAPI.ApiModels.Bid.EditBidModel)" on controller "BiddingEngineAPI.Controllers.BiddingController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-04T17:16:10.6574691+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("279"ms) [Parameters=["@__bidId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CreateDate], [t].[FormId], [t].[IsApproved], [t].[RequestId], [t].[UserId], [t].[UserTypeId], [t0].[Id], [t0].[BidId], [t0].[FormFieldId], [t0].[Value], [t0].[Id0], [t0].[CreateDate], [t0].[FiledType], [t0].[FormId], [t0].[HasChild], [t0].[HasParent], [t0].[IsActive], [t0].[IsRequired], [t0].[NameAr], [t0].[NameEn], [t0].[Order], [t0].[ParentId]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[CreateDate], [b].[FormId], [b].[IsApproved], [b].[RequestId], [b].[UserId], [b].[UserTypeId]
+    FROM [Bids] AS [b]
+    WHERE [b].[Id] = @__bidId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [b0].[Id], [b0].[BidId], [b0].[FormFieldId], [b0].[Value], [f].[Id] AS [Id0], [f].[CreateDate], [f].[FiledType], [f].[FormId], [f].[HasChild], [f].[HasParent], [f].[IsActive], [f].[IsRequired], [f].[NameAr], [f].[NameEn], [f].[Order], [f].[ParentId]
+    FROM [BidDetails] AS [b0]
+    LEFT JOIN [FormFileds] AS [f] ON [b0].[FormFieldId] = [f].[Id]
+) AS [t0] ON [t].[Id] = [t0].[BidId]
+ORDER BY [t].[Id], [t0].[Id]" (0723d8ff)
+2020-03-04T17:16:11.2736522+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("306"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [BidDetails]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:16:11.5789174+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("298"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [BidDetails]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:16:11.8891426+02:00 8000030d-0006-fc00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("306"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BidDetails] ([BidId], [FormFieldId], [Value])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [BidDetails]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-03-04T17:16:12.2056911+02:00 8000030d-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_BidDetails_FormFileds_FormFieldId\". The conflict occurred in database \"DB_A55EAB_BiddingEngine\", table \"dbo.FormFileds\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_BidDetails_FormFileds_FormFieldId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.FormFileds", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 109
+   at BiddingEngineAPI.Controllers.BiddingController.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 67
+2020-03-04T17:16:12.4641184+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)" in 2106.7568ms (afa2e885)
+2020-03-04T17:16:12.4647762+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.BiddingController.Put (BiddingEngineAPI)"' (99874f2b)
+2020-03-04T17:16:12.4689545+02:00 8000030d-0006-fc00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_BidDetails_FormFileds_FormFieldId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.FormFileds", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 109
+   at BiddingEngineAPI.Controllers.BiddingController.Put(Int32 bidId, EditBidModel model) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-03-04T17:16:12.4730312+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Source:[127.0.0.1] 
+                                                     Request: PUT http localhost:5000/api/Bidding/8  {"formId":0,"userId":0,"bidDetails":[{"id":0,"formFieldId":0,"value":"string","fieldTypeId":0}]} 
+                                                     Responded with [500] in 2138ms (f521748f)
+2020-03-04T17:16:12.4760143+02:00 8000030d-0006-fc00-b63f-84710c7967bb [INF] Request finished in 2151.7161ms 500 application/json (791a596a)
+2020-03-04T17:16:35.0902556+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Bidding/AcceptBid/8  0 (ca22a1cb)
+2020-03-04T17:16:35.0920833+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-04T17:16:35.1535445+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)"' (500cc934)
+2020-03-04T17:16:35.1690796+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"ApproveBid\", controller = \"Bidding\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] ApproveBid(Int32)" on controller "BiddingEngineAPI.Controllers.BiddingController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-04T17:16:47.5237918+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("228"ms) [Parameters=["@__BidId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [b].[Id], [b].[CreateDate], [b].[FormId], [b].[IsApproved], [b].[RequestId], [b].[UserId], [b].[UserTypeId]
+FROM [Bids] AS [b]
+WHERE [b].[Id] = @__BidId_0" (0723d8ff)
+2020-03-04T17:16:51.3089769+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("234"ms) [Parameters=["@__Bid_RequestId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[CreateDate], [r].[FormId], [r].[StatusId], [r].[UserId]
+FROM [Requests] AS [r]
+WHERE [r].[Id] = @__Bid_RequestId_0" (0723d8ff)
+2020-03-04T17:16:58.8892608+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("277"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Bids] SET [IsApproved] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:16:59.2093946+02:00 8000030e-0006-fc00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("315"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Requests] SET [StatusId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (627a98df)
+2020-03-04T17:16:59.5071344+02:00 8000030e-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint \"FK_Requests_Status_StatusId\". The conflict occurred in database \"DB_A55EAB_BiddingEngine\", table \"dbo.Status\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Requests_Status_StatusId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.Status", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+2020-03-04T17:16:59.7754200+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)" in 24606.2023ms (afa2e885)
+2020-03-04T17:16:59.7756782+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)"' (99874f2b)
+2020-03-04T17:16:59.7779431+02:00 8000030e-0006-fc00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Requests_Status_StatusId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.Status", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.ApproveBid(Int32 BidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 169
+   at BiddingEngineAPI.Controllers.BiddingController.ApproveBid(Int32 bidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 74
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-03-04T17:16:59.7791255+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Source:[127.0.0.1] 
+                                                     Request: PUT http localhost:5000/api/Bidding/AcceptBid/8   
+                                                     Responded with [500] in 24686ms (c5fa62d3)
+2020-03-04T17:16:59.7797623+02:00 8000030e-0006-fc00-b63f-84710c7967bb [INF] Request finished in 24689.8965ms 500 application/json (791a596a)
+2020-03-04T17:17:08.7821081+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Bidding/AcceptBid/8  0 (ca22a1cb)
+2020-03-04T17:17:08.7828215+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-04T17:17:08.7849243+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)"' (500cc934)
+2020-03-04T17:17:08.8845013+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"ApproveBid\", controller = \"Bidding\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] ApproveBid(Int32)" on controller "BiddingEngineAPI.Controllers.BiddingController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-04T17:17:27.6594707+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("327"ms) [Parameters=["@__BidId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [b].[Id], [b].[CreateDate], [b].[FormId], [b].[IsApproved], [b].[RequestId], [b].[UserId], [b].[UserTypeId]
+FROM [Bids] AS [b]
+WHERE [b].[Id] = @__BidId_0" (0723d8ff)
+2020-03-04T17:17:27.9656304+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("304"ms) [Parameters=["@__Bid_RequestId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[CreateDate], [r].[FormId], [r].[StatusId], [r].[UserId]
+FROM [Requests] AS [r]
+WHERE [r].[Id] = @__Bid_RequestId_0" (0723d8ff)
+2020-03-04T17:17:28.5881786+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("306"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Bids] SET [IsApproved] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-03-04T17:17:28.8932022+02:00 8000030f-0006-fc00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("296"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Requests] SET [StatusId] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (627a98df)
+2020-03-04T17:17:29.2009953+02:00 8000030f-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint \"FK_Requests_Status_StatusId\". The conflict occurred in database \"DB_A55EAB_BiddingEngine\", table \"dbo.Status\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Requests_Status_StatusId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.Status", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.ApproveBid(Int32 BidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 169
+   at BiddingEngineAPI.Controllers.BiddingController.ApproveBid(Int32 bidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 74
+2020-03-04T17:19:13.3517051+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)" in 124466.5448ms (afa2e885)
+2020-03-04T17:19:13.3531280+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.BiddingController.ApproveBid (BiddingEngineAPI)"' (99874f2b)
+2020-03-04T17:19:13.3675111+02:00 8000030f-0006-fc00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Requests_Status_StatusId". The conflict occurred in database "DB_A55EAB_BiddingEngine", table "dbo.Status", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:97029c4c-56b8-464b-a89f-4b043b4553e5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+   at BiddingEngineAPI.Services.BiddingService.ApproveBid(Int32 BidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Bidding\BiddingService.cs:line 169
+   at BiddingEngineAPI.Controllers.BiddingController.ApproveBid(Int32 bidId) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\BiddingController.cs:line 74
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-03-04T17:19:13.3722291+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Source:[127.0.0.1] 
+                                                     Request: PUT http localhost:5000/api/Bidding/AcceptBid/8   
+                                                     Responded with [500] in 124588ms (e89a7fbd)
+2020-03-04T17:19:13.3749416+02:00 8000030f-0006-fc00-b63f-84710c7967bb [INF] Request finished in 124592.7919ms 500 application/json (791a596a)

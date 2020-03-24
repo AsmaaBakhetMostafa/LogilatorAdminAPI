@@ -1,0 +1,123 @@
+2020-02-23T11:07:55.8259646+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-23T11:08:00.1261177+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-23T11:08:00.3044960+02:00  [INF] Executed DbCommand ("147"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-23T11:08:00.3094347+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-23T11:08:00.3101190+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-23T11:08:00.5825205+02:00  [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-23T11:08:00.6628786+02:00  [INF] Applying migration '"20200220144558_Bid_BidDetails"'. (0e2ac64d)
+2020-02-23T11:08:02.0104999+02:00  [INF] Executed DbCommand ("1,222"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Requests]') AND [c].[name] = N'IsApproved');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Requests] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Requests] DROP COLUMN [IsApproved];" (0723d8ff)
+2020-02-23T11:08:02.1500493+02:00  [INF] Executed DbCommand ("139"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Bids] (
+    [Id] int NOT NULL IDENTITY,
+    [CreateDate] datetime2 NOT NULL,
+    [FormId] int NULL,
+    [UserId] int NOT NULL,
+    [UserTypeId] int NOT NULL,
+    [RequestId] int NOT NULL,
+    [IsApproved] bit NULL,
+    CONSTRAINT [PK_Bids] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Bids_Forms_FormId] FOREIGN KEY ([FormId]) REFERENCES [Forms] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Bids_Requests_RequestId] FOREIGN KEY ([RequestId]) REFERENCES [Requests] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2020-02-23T11:08:02.2262796+02:00  [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [BidDetails] (
+    [Id] int NOT NULL IDENTITY,
+    [BidId] int NOT NULL,
+    [FormFieldId] int NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_BidDetails] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BidDetails_Bids_BidId] FOREIGN KEY ([BidId]) REFERENCES [Bids] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BidDetails_FormFileds_FormFieldId] FOREIGN KEY ([FormFieldId]) REFERENCES [FormFileds] ([Id]) ON DELETE NO ACTION
+);" (0723d8ff)
+2020-02-23T11:08:02.2623586+02:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_BidDetails_BidId] ON [BidDetails] ([BidId]);" (0723d8ff)
+2020-02-23T11:08:02.2775627+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_BidDetails_FormFieldId] ON [BidDetails] ([FormFieldId]);" (0723d8ff)
+2020-02-23T11:08:02.2903561+02:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Bids_FormId] ON [Bids] ([FormId]);" (0723d8ff)
+2020-02-23T11:08:02.2916895+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Bids_RequestId] ON [Bids] ([RequestId]);" (0723d8ff)
+2020-02-23T11:08:02.3561612+02:00  [INF] Executed DbCommand ("64"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200220144558_Bid_BidDetails', N'3.1.0');" (0723d8ff)
+2020-02-23T11:08:03.4440289+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-23T11:08:03.4441437+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-23T11:08:03.4441730+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-23T11:08:03.6260148+02:00 80000014-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-23T11:08:04.0172517+02:00 80000014-0006-fc00-b63f-84710c7967bb [INF] Request finished in 393.5264ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-23T11:08:04.8533241+02:00 80000015-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-02-23T11:08:05.5349636+02:00 80000015-0006-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-02-23T11:08:05.5359908+02:00 80000015-0006-fc00-b63f-84710c7967bb [INF] Request finished in 683.3023ms 0 text/css (791a596a)
+2020-02-23T11:08:05.8552820+02:00 80000015-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-02-23T11:08:05.8585984+02:00 80000015-0000-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-02-23T11:08:05.8590393+02:00 80000015-0000-fc00-b63f-84710c7967bb [INF] Request finished in 3.9998ms 200 image/png (791a596a)
+2020-02-23T11:08:06.5107462+02:00 80000016-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-23T11:08:06.8107843+02:00 80000016-0000-fc00-b63f-84710c7967bb [INF] Request finished in 300.5493ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-23T12:43:20.4786126+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetAllForm?formtype=1   (ca22a1cb)
+2020-02-23T12:43:20.6959283+02:00 8000006c-0002-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-23T12:43:20.7987506+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetAllForm?formtype=1   (ca22a1cb)
+2020-02-23T12:43:21.8517820+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetAllForm?formtype=1   (ca22a1cb)
+2020-02-23T12:43:25.0558834+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (500cc934)
+2020-02-23T12:43:25.0689378+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (500cc934)
+2020-02-23T12:43:25.0689306+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (500cc934)
+2020-02-23T12:43:26.0621045+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllForm\", controller = \"Form\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] GetAllForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-23T12:43:26.0620958+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllForm\", controller = \"Form\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] GetAllForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-23T12:43:26.0621243+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllForm\", controller = \"Form\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] GetAllForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-23T12:43:26.2700032+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-23T12:43:26.2709542+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-23T12:43:28.0878001+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("593"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-23T12:43:28.0877994+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("608"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-23T12:43:28.0877993+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("552"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-23T12:43:28.8342849+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.FormViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-23T12:43:28.8342848+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.FormViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-23T12:43:28.8342848+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.FormViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-23T12:43:29.0185324+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)" in 2944.2048ms (afa2e885)
+2020-02-23T12:43:29.0185324+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)" in 2944.2044ms (afa2e885)
+2020-02-23T12:43:29.0185324+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)" in 2944.2041ms (afa2e885)
+2020-02-23T12:43:29.0187106+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-23T12:43:29.0187123+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-23T12:43:29.0187157+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-23T12:43:30.5688426+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetAllForm ?formtype=1  Responded with [200] in 9739ms (cc686477)
+2020-02-23T12:43:30.5688419+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetAllForm ?formtype=1  Responded with [200] in 9739ms (cc686477)
+2020-02-23T12:43:30.5688424+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetAllForm ?formtype=1  Responded with [200] in 8715ms (1e735ba6)
+2020-02-23T12:43:30.6106207+02:00 80000065-0001-fb00-b63f-84710c7967bb [INF] Request finished in 8759.0189ms 200 application/json (791a596a)
+2020-02-23T12:43:30.6106207+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request finished in 9811.8233ms 200 application/json (791a596a)
+2020-02-23T12:43:30.6106207+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] Request finished in 10156.1317ms 200 application/json (791a596a)

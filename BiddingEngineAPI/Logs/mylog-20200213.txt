@@ -1,0 +1,649 @@
+2020-02-13T13:28:14.2867384+02:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"Package"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-02-13T13:28:14.3608296+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-13T13:28:16.1654596+02:00  [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-13T13:28:16.1927647+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-13T13:28:16.1956783+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-13T13:28:16.1961542+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-13T13:28:16.2744733+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-13T13:28:16.3610312+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-13T13:28:16.4735681+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-13T13:28:16.8900370+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Roles] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-02-13T13:28:17.9337520+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-13T13:28:17.9340592+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-13T13:28:17.9341289+02:00  [INF] Content root path: "D:\WorkSpace\Tasaloh\Dev\BiddingEngineAPI" (b5d60022)
+2020-02-13T13:28:18.1600476+02:00 80000082-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-13T13:28:18.3681085+02:00 80000082-0004-fa00-b63f-84710c7967bb [INF] Request finished in 222.5632ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-13T13:28:18.9277885+02:00 80000083-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-13T13:28:19.0686457+02:00 80000083-0004-fa00-b63f-84710c7967bb [INF] Request finished in 141.1322ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-13T13:28:27.5679783+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Packages   (ca22a1cb)
+2020-02-13T13:28:27.5838457+02:00 80000085-0004-fa00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-13T13:28:28.0803607+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:28:28.1195951+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] Get()" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:28:28.1591695+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Log message in Get() method (c0890ee2)
+2020-02-13T13:28:28.3928957+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("108"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[IsActive] = CAST(1 AS bit)" (0723d8ff)
+2020-02-13T13:28:28.4573627+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T13:28:28.5265455+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 396.3002ms (afa2e885)
+2020-02-13T13:28:28.5272675+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:28:29.2431731+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Packages   Responded with [200] in 1639ms (98ba38b7)
+2020-02-13T13:28:29.2472026+02:00 80000085-0004-fa00-b63f-84710c7967bb [INF] Request finished in 1681.0538ms 200 application/json (791a596a)
+2020-02-13T13:34:39.2215001+02:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"Package"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-02-13T13:34:39.2715122+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-13T13:34:39.5754079+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-13T13:34:39.6003890+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-13T13:34:39.6037524+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-13T13:34:39.6044802+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-13T13:34:39.6217493+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-13T13:34:39.6403293+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-13T13:34:39.6561416+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-13T13:34:39.8224499+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Roles] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-02-13T13:34:39.9905142+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-13T13:34:39.9906327+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-13T13:34:39.9906618+02:00  [INF] Content root path: "D:\WorkSpace\Tasaloh\Dev\BiddingEngineAPI" (b5d60022)
+2020-02-13T13:34:40.0168699+02:00 800000a1-0005-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-13T13:34:40.0772433+02:00 800000a1-0005-fb00-b63f-84710c7967bb [INF] Request finished in 65.0018ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-13T13:34:40.3557211+02:00 800000a2-0005-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-13T13:34:40.4608559+02:00 800000a2-0005-fb00-b63f-84710c7967bb [INF] Request finished in 105.4012ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-13T13:34:52.7468196+02:00 80000032-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581593692705   (ca22a1cb)
+2020-02-13T13:34:52.7520672+02:00 80000032-0000-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-13T13:34:52.7576330+02:00 80000032-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:34:52.7622593+02:00 80000032-0000-fb00-b63f-84710c7967bb [INF] Request finished in 15.5272ms 204  (791a596a)
+2020-02-13T13:34:52.7641398+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581593692705 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:34:52.7651310+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:34:52.8678756+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:34:52.8959723+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:34:53.1668487+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("34"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T13:34:53.1870903+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T13:34:53.1998260+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 299.0316ms (afa2e885)
+2020-02-13T13:34:53.2003503+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:34:53.4170354+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581593692705  Responded with [200] in 643ms (04f763e7)
+2020-02-13T13:34:53.4223334+02:00 80000033-0000-fb00-b63f-84710c7967bb [INF] Request finished in 658.227ms 200 application/json (791a596a)
+2020-02-13T13:35:10.8219044+02:00 80000035-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages   (ca22a1cb)
+2020-02-13T13:35:10.8231267+02:00 80000035-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:35:10.8245757+02:00 80000035-0000-fb00-b63f-84710c7967bb [INF] Request finished in 2.6548ms 204  (791a596a)
+2020-02-13T13:35:10.8268532+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Packages application/json; charset=UTF-8 88 (ca22a1cb)
+2020-02-13T13:35:10.8273155+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:35:10.8323361+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Post (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:35:10.8411987+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Post\", controller = \"Packages\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] Post(BiddingEngineAPI.ApiModels.Packages.CreatePackageModel)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:35:10.8526768+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Post new Package (36764f71)
+2020-02-13T13:35:10.8528794+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] request obj : Name : asaasas, Price: 150, UserType_Id: 2, Bidding_Number: 3666, Description: sdf (3a6aa812)
+2020-02-13T13:35:14.6272243+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("200"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Packages] ([Bidding_Number], [Create_Date], [Description], [IsActive], [Name], [Price], [UserType_Id])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Package_Id]
+FROM [Packages]
+WHERE @@ROWCOUNT = 1 AND [Package_Id] = scope_identity();" (0723d8ff)
+2020-02-13T13:35:14.6962316+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T13:35:14.6969222+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Post (BiddingEngineAPI)" in 3855.5707ms (afa2e885)
+2020-02-13T13:35:14.6970070+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Post (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:35:14.7394919+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Packages  {"name":"asaasas","price":150,"description":"sdf","bidding_Number":3666,"userType_Id":2} Responded with [200] in 3911ms (134fda5e)
+2020-02-13T13:35:14.7409696+02:00 80000036-0000-fb00-b63f-84710c7967bb [INF] Request finished in 3914.4443ms 200 application/json (791a596a)
+2020-02-13T13:35:14.9398471+02:00 80000037-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581593714854   (ca22a1cb)
+2020-02-13T13:35:14.9412677+02:00 80000037-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:35:14.9420872+02:00 80000037-0000-fb00-b63f-84710c7967bb [INF] Request finished in 2.4806ms 204  (791a596a)
+2020-02-13T13:35:14.9546534+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581593714854 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:35:14.9557633+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:35:14.9627940+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:35:14.9634431+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:35:15.0464902+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T13:35:15.0475728+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T13:35:15.0482799+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 84.714ms (afa2e885)
+2020-02-13T13:35:15.0483420+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:35:15.0553241+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581593714854  Responded with [200] in 99ms (9d3c92e1)
+2020-02-13T13:35:15.0558610+02:00 80000038-0000-fb00-b63f-84710c7967bb [INF] Request finished in 101.4993ms 200 application/json (791a596a)
+2020-02-13T13:57:08.5998996+02:00 80000082-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/8?_=1581595028522   (ca22a1cb)
+2020-02-13T13:57:08.6010264+02:00 80000082-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:57:08.6022238+02:00 80000082-0006-fa00-b63f-84710c7967bb [INF] Request finished in 3.1045ms 204  (791a596a)
+2020-02-13T13:57:08.6075242+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/8?_=1581595028522 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:57:08.6082801+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:57:08.6094117+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:57:08.6125018+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:57:08.6704075+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T13:57:08.6715042+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T13:57:08.6719657+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 59.342ms (afa2e885)
+2020-02-13T13:57:08.6720153+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:57:08.6734351+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/8 ?_=1581595028522  Responded with [200] in 64ms (09608d4a)
+2020-02-13T13:57:08.6737094+02:00 80000083-0006-fa00-b63f-84710c7967bb [INF] Request finished in 66.5244ms 200 application/json (791a596a)
+2020-02-13T13:57:19.6334746+02:00 8000008a-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/8?_=1581595039545   (ca22a1cb)
+2020-02-13T13:57:19.6341326+02:00 8000008a-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:57:19.6347507+02:00 8000008a-0004-fa00-b63f-84710c7967bb [INF] Request finished in 1.3008ms 204  (791a596a)
+2020-02-13T13:57:19.6362683+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/8?_=1581595039545 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:57:19.6369952+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:57:19.6389787+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:57:19.6394891+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:57:19.6498306+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T13:57:19.6513392+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T13:57:19.6522020+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 12.3734ms (afa2e885)
+2020-02-13T13:57:19.6525381+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:57:19.6553056+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/8 ?_=1581595039545  Responded with [200] in 17ms (261e16cd)
+2020-02-13T13:57:19.6557906+02:00 8000008b-0004-fa00-b63f-84710c7967bb [INF] Request finished in 19.6125ms 200 application/json (791a596a)
+2020-02-13T13:58:49.9449932+02:00 80000037-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/8?_=1581595129443   (ca22a1cb)
+2020-02-13T13:58:49.9463473+02:00 80000037-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:49.9479011+02:00 80000037-0004-fd00-b63f-84710c7967bb [INF] Request finished in 7.2305ms 204  (791a596a)
+2020-02-13T13:58:49.9733097+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/8?_=1581595129443 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:58:49.9735320+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:49.9743298+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:58:49.9746819+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:58:49.9836629+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T13:58:49.9841835+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T13:58:49.9844799+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 9.6908ms (afa2e885)
+2020-02-13T13:58:49.9845104+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:58:49.9854579+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/8 ?_=1581595129443  Responded with [200] in 11ms (a5cb2900)
+2020-02-13T13:58:49.9857176+02:00 80000038-0004-fd00-b63f-84710c7967bb [INF] Request finished in 12.4564ms 200 application/json (791a596a)
+2020-02-13T13:58:52.4835035+02:00 80000039-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/8?_=1581595132368   (ca22a1cb)
+2020-02-13T13:58:52.4838831+02:00 80000039-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:52.4845101+02:00 80000039-0004-fd00-b63f-84710c7967bb [INF] Request finished in 1.2106ms 204  (791a596a)
+2020-02-13T13:58:52.4875805+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/8?_=1581595132368 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:58:52.4883168+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:52.4898577+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:58:52.4905094+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:58:52.4994762+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T13:58:52.5001241+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T13:58:52.5004738+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 9.8132ms (afa2e885)
+2020-02-13T13:58:52.5005111+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:58:52.5019523+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/8 ?_=1581595132368  Responded with [200] in 13ms (11615c09)
+2020-02-13T13:58:52.5024521+02:00 8000003a-0004-fd00-b63f-84710c7967bb [INF] Request finished in 15.1751ms 200 application/json (791a596a)
+2020-02-13T13:58:58.3553123+02:00 800000eb-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581595138296   (ca22a1cb)
+2020-02-13T13:58:58.3557195+02:00 800000eb-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:58.3568906+02:00 800000eb-0002-ff00-b63f-84710c7967bb [INF] Request finished in 1.5595ms 204  (791a596a)
+2020-02-13T13:58:58.3607105+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581595138296 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:58:58.3612858+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:58:58.3625654+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:58:58.3634734+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:58:58.3737547+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T13:58:58.3752973+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T13:58:58.3763034+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 12.6675ms (afa2e885)
+2020-02-13T13:58:58.3763824+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:58:58.3786543+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581595138296  Responded with [200] in 17ms (3f9a5954)
+2020-02-13T13:58:58.3791444+02:00 800000ec-0002-ff00-b63f-84710c7967bb [INF] Request finished in 18.5723ms 200 application/json (791a596a)
+2020-02-13T13:59:48.7403234+02:00 80000092-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581595188617   (ca22a1cb)
+2020-02-13T13:59:48.7407316+02:00 80000092-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:59:48.7414127+02:00 80000092-0004-fa00-b63f-84710c7967bb [INF] Request finished in 8.3381ms 204  (791a596a)
+2020-02-13T13:59:48.7506845+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581595188617 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T13:59:48.7512649+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T13:59:48.7533033+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T13:59:48.7538532+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T13:59:48.7642153+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T13:59:48.7686348+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T13:59:48.7707574+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 16.5178ms (afa2e885)
+2020-02-13T13:59:48.7709885+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T13:59:48.7741981+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581595188617  Responded with [200] in 22ms (1b2baa43)
+2020-02-13T13:59:48.7771083+02:00 80000093-0004-fa00-b63f-84710c7967bb [INF] Request finished in 26.3083ms 200 application/json (791a596a)
+2020-02-13T14:40:54.6985159+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Packages/1   (ca22a1cb)
+2020-02-13T14:40:54.7004319+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:40:54.7012084+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:40:54.7169335+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:40:54.7185966+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:40:54.7193819+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 17.8834ms (afa2e885)
+2020-02-13T14:40:54.7195444+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:40:54.7211797+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Packages/1   Responded with [200] in 21ms (5dc5f9ad)
+2020-02-13T14:40:54.7215261+02:00 800000b5-0004-ff00-b63f-84710c7967bb [INF] Request finished in 23.2037ms 200 application/json (791a596a)
+2020-02-13T14:44:22.8792138+02:00 8000002d-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/5?_=1581597862659   (ca22a1cb)
+2020-02-13T14:44:22.8795597+02:00 8000002d-0007-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:22.8817320+02:00 8000002d-0007-fb00-b63f-84710c7967bb [INF] Request finished in 2.4452ms 204  (791a596a)
+2020-02-13T14:44:22.8879312+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/5?_=1581597862659 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:44:22.8883755+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:22.8940098+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:44:22.8948300+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:44:22.9118930+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:44:22.9126473+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:44:22.9132022+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 18.2391ms (afa2e885)
+2020-02-13T14:44:22.9133000+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:44:22.9149981+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/5 ?_=1581597862659  Responded with [200] in 26ms (ad764914)
+2020-02-13T14:44:22.9192575+02:00 8000002e-0007-fb00-b63f-84710c7967bb [INF] Request finished in 31.3142ms 200 application/json (791a596a)
+2020-02-13T14:44:30.4755853+02:00 8000002f-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581597870424   (ca22a1cb)
+2020-02-13T14:44:30.4757308+02:00 8000002f-0007-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:30.4765151+02:00 8000002f-0007-fb00-b63f-84710c7967bb [INF] Request finished in 0.8196ms 204  (791a596a)
+2020-02-13T14:44:30.4812007+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581597870424 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:44:30.4819141+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:30.4842864+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:44:30.4849062+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:44:30.4935753+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T14:44:30.4943170+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T14:44:30.4947591+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 9.6776ms (afa2e885)
+2020-02-13T14:44:30.4948614+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:44:30.4960445+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581597870424  Responded with [200] in 13ms (c4be1d4a)
+2020-02-13T14:44:30.5047152+02:00 80000030-0007-fb00-b63f-84710c7967bb [INF] Request finished in 23.505ms 200 application/json (791a596a)
+2020-02-13T14:44:33.3855718+02:00 8000008a-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/5?_=1581597873329   (ca22a1cb)
+2020-02-13T14:44:33.3857283+02:00 8000008a-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:33.3859952+02:00 8000008a-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.4325ms 204  (791a596a)
+2020-02-13T14:44:33.3879568+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/5?_=1581597873329 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:44:33.3884156+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:33.3891731+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:44:33.3894525+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:44:33.3932077+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:44:33.3937220+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:44:33.3939648+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 4.4516ms (afa2e885)
+2020-02-13T14:44:33.3939960+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:44:33.3950857+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/5 ?_=1581597873329  Responded with [200] in 6ms (d868e748)
+2020-02-13T14:44:33.3955384+02:00 8000008b-0006-fa00-b63f-84710c7967bb [INF] Request finished in 7.5801ms 200 application/json (791a596a)
+2020-02-13T14:44:35.6498695+02:00 8000008c-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581597875580   (ca22a1cb)
+2020-02-13T14:44:35.6501266+02:00 8000008c-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:35.6506111+02:00 8000008c-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.7243ms 204  (791a596a)
+2020-02-13T14:44:35.6567909+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581597875580 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:44:35.6576780+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:44:35.6592019+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:44:35.6597322+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:44:35.6710931+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T14:44:35.6717564+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T14:44:35.6727404+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 12.6741ms (afa2e885)
+2020-02-13T14:44:35.6728040+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:44:35.6738059+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581597875580  Responded with [200] in 15ms (ed4572e5)
+2020-02-13T14:44:35.6744848+02:00 8000008d-0006-fa00-b63f-84710c7967bb [INF] Request finished in 17.8877ms 200 application/json (791a596a)
+2020-02-13T14:49:24.3544434+02:00 800000ee-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581598164280   (ca22a1cb)
+2020-02-13T14:49:24.3565496+02:00 800000ee-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:49:24.3623227+02:00 800000ee-0002-ff00-b63f-84710c7967bb [INF] Request finished in 7.9196ms 204  (791a596a)
+2020-02-13T14:49:24.3769554+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581598164280 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:49:24.3771902+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:49:24.3780288+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:49:24.3784741+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:49:24.3870660+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:49:24.3875502+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:49:24.3879254+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 9.3645ms (afa2e885)
+2020-02-13T14:49:24.3879613+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:49:24.3890959+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581598164280  Responded with [200] in 11ms (ae93724e)
+2020-02-13T14:49:24.3893986+02:00 800000ef-0002-ff00-b63f-84710c7967bb [INF] Request finished in 12.4773ms 200 application/json (791a596a)
+2020-02-13T14:49:53.1220716+02:00 800000f0-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581598192993   (ca22a1cb)
+2020-02-13T14:49:53.1223287+02:00 800000f0-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:49:53.1226623+02:00 800000f0-0002-ff00-b63f-84710c7967bb [INF] Request finished in 0.599ms 204  (791a596a)
+2020-02-13T14:49:53.1252104+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581598192993 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:49:53.1255785+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:49:53.1265375+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:49:53.1270018+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:49:53.1308878+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:49:53.1312164+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:49:53.1314550+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 4.3573ms (afa2e885)
+2020-02-13T14:49:53.1314847+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:49:53.1330154+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581598192993  Responded with [200] in 7ms (5d278c57)
+2020-02-13T14:49:53.1354988+02:00 800000f1-0002-ff00-b63f-84710c7967bb [INF] Request finished in 8.4868ms 200 application/json (791a596a)
+2020-02-13T14:50:17.7767009+02:00 800000f2-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581598215646   (ca22a1cb)
+2020-02-13T14:50:17.7772489+02:00 800000f2-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:17.7782136+02:00 800000f2-0002-ff00-b63f-84710c7967bb [INF] Request finished in 1.463ms 204  (791a596a)
+2020-02-13T14:50:17.7815709+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581598215646 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:50:17.7821687+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:17.7833608+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:50:17.7839410+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:50:17.7914645+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:50:17.7920096+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:50:17.7923304+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 8.3042ms (afa2e885)
+2020-02-13T14:50:17.7923670+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:50:17.7933510+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581598215646  Responded with [200] in 10ms (58cfd8e4)
+2020-02-13T14:50:17.7936428+02:00 800000f3-0002-ff00-b63f-84710c7967bb [INF] Request finished in 12.1477ms 200 application/json (791a596a)
+2020-02-13T14:50:25.3298869+02:00 800000f4-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581598225245   (ca22a1cb)
+2020-02-13T14:50:25.3300337+02:00 800000f4-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:25.3303347+02:00 800000f4-0002-ff00-b63f-84710c7967bb [INF] Request finished in 0.4648ms 204  (791a596a)
+2020-02-13T14:50:25.4696766+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581598225245 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:50:25.4701588+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:25.4751102+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:50:25.4765959+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:50:25.4961051+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T14:50:25.4967275+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T14:50:25.4973386+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 20.235ms (afa2e885)
+2020-02-13T14:50:25.4973928+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:50:25.4986735+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581598225245  Responded with [200] in 27ms (254f4984)
+2020-02-13T14:50:25.4990283+02:00 800000f5-0002-ff00-b63f-84710c7967bb [INF] Request finished in 29.4273ms 200 application/json (791a596a)
+2020-02-13T14:50:30.8261546+02:00 800000f6-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/5?_=1581598230774   (ca22a1cb)
+2020-02-13T14:50:30.8262255+02:00 800000f6-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:30.8264042+02:00 800000f6-0002-ff00-b63f-84710c7967bb [INF] Request finished in 0.2646ms 204  (791a596a)
+2020-02-13T14:50:30.8278078+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/5?_=1581598230774 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T14:50:30.8279384+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T14:50:30.8283627+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T14:50:30.8286713+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T14:50:30.8305448+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T14:50:30.8308217+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T14:50:30.8311198+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 2.3763ms (afa2e885)
+2020-02-13T14:50:30.8311411+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T14:50:30.8318283+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/5 ?_=1581598230774  Responded with [200] in 3ms (fb6990a3)
+2020-02-13T14:50:30.8320268+02:00 800000f7-0002-ff00-b63f-84710c7967bb [INF] Request finished in 4.2375ms 200 application/json (791a596a)
+2020-02-13T15:03:03.5646331+02:00 8000009a-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/5?_=1581598983482   (ca22a1cb)
+2020-02-13T15:03:03.5647411+02:00 8000009a-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:03.5692602+02:00 8000009a-0004-fb00-b63f-84710c7967bb [INF] Request finished in 1.6482ms 204  (791a596a)
+2020-02-13T15:03:03.5695665+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/5?_=1581598983482 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:03:03.5697348+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:03.5704348+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:03:03.5707566+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:03:03.5857317+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:03:03.5861436+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:03:03.5863794+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 15.5565ms (afa2e885)
+2020-02-13T15:03:03.5864251+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:03:03.5908291+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/5 ?_=1581598983482  Responded with [200] in 20ms (4175fe01)
+2020-02-13T15:03:03.5973114+02:00 8000009b-0004-fb00-b63f-84710c7967bb [INF] Request finished in 27.748ms 200 application/json (791a596a)
+2020-02-13T15:03:14.2636200+02:00 8000009c-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/DeActivate/5   (ca22a1cb)
+2020-02-13T15:03:14.2638155+02:00 8000009c-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:14.2643558+02:00 8000009c-0004-fb00-b63f-84710c7967bb [INF] Request finished in 1.0549ms 204  (791a596a)
+2020-02-13T15:03:14.2693440+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/Api/Packages/DeActivate/5 application/json; charset=utf-8 0 (ca22a1cb)
+2020-02-13T15:03:14.2695082+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:14.2707199+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:03:14.3056966+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"DeActivate\", controller = \"Packages\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.EFCore.Model.Package] DeActivate(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:03:14.5547364+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Package_Id], [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Price], [p].[UserType_Id]
+FROM [Packages] AS [p]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:03:14.8048168+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("113"ms) [Parameters=["@p7='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Packages] SET [Bidding_Number] = @p0, [Create_Date] = @p1, [Description] = @p2, [IsActive] = @p3, [Name] = @p4, [Price] = @p5, [UserType_Id] = @p6
+WHERE [Package_Id] = @p7;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-13T15:03:14.8253930+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.EFCore.Model.Package"'. (8a1b66c8)
+2020-02-13T15:03:14.8628315+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)" in 556.8213ms (afa2e885)
+2020-02-13T15:03:14.8630051+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:03:14.8662897+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/Api/Packages/DeActivate/5   Responded with [200] in 596ms (ad9766d7)
+2020-02-13T15:03:14.8674201+02:00 8000009d-0004-fb00-b63f-84710c7967bb [INF] Request finished in 598.0959ms 200 application/json (791a596a)
+2020-02-13T15:03:15.1619503+02:00 8000009e-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581598995069   (ca22a1cb)
+2020-02-13T15:03:15.1620930+02:00 8000009e-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:15.1623565+02:00 8000009e-0004-fb00-b63f-84710c7967bb [INF] Request finished in 0.4175ms 204  (791a596a)
+2020-02-13T15:03:15.1652562+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581598995069 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:03:15.1655670+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:03:15.1665365+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:03:15.1669304+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:03:15.1762171+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T15:03:15.1769693+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T15:03:15.1774848+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 10.4426ms (afa2e885)
+2020-02-13T15:03:15.1775366+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:03:15.1785259+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581598995069  Responded with [200] in 12ms (1dbc34d9)
+2020-02-13T15:03:15.1787681+02:00 8000009f-0004-fb00-b63f-84710c7967bb [INF] Request finished in 13.6535ms 200 application/json (791a596a)
+2020-02-13T15:11:15.4078683+02:00 80000076-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599475348   (ca22a1cb)
+2020-02-13T15:11:15.4080184+02:00 80000076-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:11:15.4087335+02:00 80000076-0000-fd00-b63f-84710c7967bb [INF] Request finished in 0.9624ms 204  (791a596a)
+2020-02-13T15:11:15.4147827+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599475348 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:11:15.4165033+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:11:15.4190536+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:11:15.4203146+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:11:15.4982234+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T15:11:15.5005472+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T15:11:15.5024354+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 81.7833ms (afa2e885)
+2020-02-13T15:11:15.5026719+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:11:15.5061654+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581599475348  Responded with [200] in 88ms (4a68a465)
+2020-02-13T15:11:15.5072186+02:00 80000077-0000-fd00-b63f-84710c7967bb [INF] Request finished in 92.5383ms 200 application/json (791a596a)
+2020-02-13T15:11:21.2585461+02:00 80000078-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581599481195   (ca22a1cb)
+2020-02-13T15:11:21.2586303+02:00 80000078-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:11:21.2588213+02:00 80000078-0000-fd00-b63f-84710c7967bb [INF] Request finished in 0.3009ms 204  (791a596a)
+2020-02-13T15:11:21.2631503+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581599481195 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:11:21.2632783+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:11:21.2642760+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:11:21.2645842+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:11:21.2694372+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:11:21.2698447+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:11:21.2701814+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 5.467ms (afa2e885)
+2020-02-13T15:11:21.2702486+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:11:21.2710298+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581599481195  Responded with [200] in 7ms (a2f60304)
+2020-02-13T15:11:21.2713186+02:00 80000079-0000-fd00-b63f-84710c7967bb [INF] Request finished in 8.1747ms 200 application/json (791a596a)
+2020-02-13T15:12:39.8382959+02:00 800000a1-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581599559749   (ca22a1cb)
+2020-02-13T15:12:39.8384806+02:00 800000a1-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:12:39.8463695+02:00 800000a1-0004-fa00-b63f-84710c7967bb [INF] Request finished in 8.0897ms 204  (791a596a)
+2020-02-13T15:12:39.8502339+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581599559749 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:12:39.8505709+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:12:39.8522033+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:12:39.8530080+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:12:39.8651430+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:12:39.8655867+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:12:39.8659157+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 12.8374ms (afa2e885)
+2020-02-13T15:12:39.8659526+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:12:39.8684896+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581599559749  Responded with [200] in 17ms (f072d1f7)
+2020-02-13T15:12:39.8716574+02:00 800000a2-0004-fa00-b63f-84710c7967bb [INF] Request finished in 21.4937ms 200 application/json (791a596a)
+2020-02-13T15:13:31.1850006+02:00 80000099-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581599611142   (ca22a1cb)
+2020-02-13T15:13:31.1856986+02:00 80000099-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:13:31.1894289+02:00 80000099-0006-fa00-b63f-84710c7967bb [INF] Request finished in 4.5631ms 204  (791a596a)
+2020-02-13T15:13:31.1934590+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581599611142 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:13:31.1936261+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:13:31.1944472+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:13:31.1950344+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:13:31.2025535+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:13:31.2029604+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:13:31.2031476+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 8.0432ms (afa2e885)
+2020-02-13T15:13:31.2031926+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:13:31.2038655+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581599611142  Responded with [200] in 10ms (0ecdd415)
+2020-02-13T15:13:31.2042040+02:00 8000009a-0006-fa00-b63f-84710c7967bb [INF] Request finished in 10.9689ms 200 application/json (791a596a)
+2020-02-13T15:13:47.7355349+02:00 8000009b-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581599627682   (ca22a1cb)
+2020-02-13T15:13:47.7356286+02:00 8000009b-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:13:47.7358751+02:00 8000009b-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.3581ms 204  (791a596a)
+2020-02-13T15:13:47.7375079+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581599627682 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:13:47.7376495+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:13:47.7389669+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:13:47.7393515+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:13:47.7467003+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:13:47.7480200+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:13:47.7499659+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 9.8355ms (afa2e885)
+2020-02-13T15:13:47.7502326+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:13:47.7531680+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581599627682  Responded with [200] in 15ms (04fceded)
+2020-02-13T15:13:47.7543166+02:00 8000009c-0006-fa00-b63f-84710c7967bb [INF] Request finished in 16.7272ms 200 application/json (791a596a)
+2020-02-13T15:14:30.8839214+02:00 8000009d-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/2?_=1581599670808   (ca22a1cb)
+2020-02-13T15:14:30.8840148+02:00 8000009d-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:30.8869739+02:00 8000009d-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.4078ms 204  (791a596a)
+2020-02-13T15:14:30.9042406+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/2?_=1581599670808 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:14:30.9044295+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:30.9051125+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:30.9055773+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:30.9124626+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:14:30.9130799+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:14:30.9133439+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 7.6904ms (afa2e885)
+2020-02-13T15:14:30.9134040+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:30.9141757+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/2 ?_=1581599670808  Responded with [200] in 9ms (f03f964f)
+2020-02-13T15:14:30.9150213+02:00 8000009e-0006-fa00-b63f-84710c7967bb [INF] Request finished in 10.8101ms 200 application/json (791a596a)
+2020-02-13T15:14:34.9384991+02:00 8000009f-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/DeActivate/2   (ca22a1cb)
+2020-02-13T15:14:34.9388608+02:00 8000009f-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:34.9394425+02:00 8000009f-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.9635ms 204  (791a596a)
+2020-02-13T15:14:34.9442868+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/Api/Packages/DeActivate/2 application/json; charset=utf-8 0 (ca22a1cb)
+2020-02-13T15:14:34.9444163+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:34.9456435+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:34.9463454+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"DeActivate\", controller = \"Packages\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.EFCore.Model.Package] DeActivate(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:34.9517448+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Package_Id], [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Price], [p].[UserType_Id]
+FROM [Packages] AS [p]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:14:34.9696062+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=["@p7='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Packages] SET [Bidding_Number] = @p0, [Create_Date] = @p1, [Description] = @p2, [IsActive] = @p3, [Name] = @p4, [Price] = @p5, [UserType_Id] = @p6
+WHERE [Package_Id] = @p7;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-13T15:14:34.9710016+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.EFCore.Model.Package"'. (8a1b66c8)
+2020-02-13T15:14:34.9714003+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)" in 24.9081ms (afa2e885)
+2020-02-13T15:14:34.9714607+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.DeActivate (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:34.9722196+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/Api/Packages/DeActivate/2   Responded with [200] in 27ms (76bd82d1)
+2020-02-13T15:14:34.9725769+02:00 800000a0-0006-fa00-b63f-84710c7967bb [INF] Request finished in 28.5664ms 200 application/json (791a596a)
+2020-02-13T15:14:35.1477529+02:00 800000a1-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599675077   (ca22a1cb)
+2020-02-13T15:14:35.1478364+02:00 800000a1-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:35.1480106+02:00 800000a1-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.2686ms 204  (791a596a)
+2020-02-13T15:14:35.1503604+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599675077 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:14:35.1504775+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:35.1519824+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:35.1523349+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:35.1590584+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T15:14:35.1606456+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T15:14:35.1611073+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 8.6175ms (afa2e885)
+2020-02-13T15:14:35.1612136+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:35.1628693+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581599675077  Responded with [200] in 12ms (47b28705)
+2020-02-13T15:14:35.1634635+02:00 800000a2-0006-fa00-b63f-84710c7967bb [INF] Request finished in 13.1051ms 200 application/json (791a596a)
+2020-02-13T15:14:38.9212782+02:00 800000a3-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/5?_=1581599678875   (ca22a1cb)
+2020-02-13T15:14:38.9214000+02:00 800000a3-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:38.9216716+02:00 800000a3-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.403ms 204  (791a596a)
+2020-02-13T15:14:38.9238331+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/5?_=1581599678875 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:14:38.9239359+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:38.9244792+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:38.9247154+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Packages\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Packages.PackageModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:38.9258938+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:14:38.9261020+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Packages.PackageModel"'. (8a1b66c8)
+2020-02-13T15:14:38.9262201+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)" in 1.4667ms (afa2e885)
+2020-02-13T15:14:38.9262589+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:38.9265349+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/5 ?_=1581599678875  Responded with [200] in 2ms (e10a3235)
+2020-02-13T15:14:38.9266824+02:00 800000a4-0006-fa00-b63f-84710c7967bb [INF] Request finished in 2.8661ms 200 application/json (791a596a)
+2020-02-13T15:14:42.4366852+02:00 800000a5-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/Activate/5   (ca22a1cb)
+2020-02-13T15:14:42.4367618+02:00 800000a5-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:42.4369089+02:00 800000a5-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.2759ms 204  (791a596a)
+2020-02-13T15:14:42.4381746+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/Api/Packages/Activate/5 application/json; charset=utf-8 0 (ca22a1cb)
+2020-02-13T15:14:42.4382162+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:42.4383211+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.Activate (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:42.4420844+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Activate\", controller = \"Packages\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.EFCore.Model.Package] Activate(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:42.4439229+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Package_Id], [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Price], [p].[UserType_Id]
+FROM [Packages] AS [p]
+WHERE [p].[Package_Id] = @__id_0" (0723d8ff)
+2020-02-13T15:14:42.5297262+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@p7='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Packages] SET [Bidding_Number] = @p0, [Create_Date] = @p1, [Description] = @p2, [IsActive] = @p3, [Name] = @p4, [Price] = @p5, [UserType_Id] = @p6
+WHERE [Package_Id] = @p7;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-13T15:14:42.5373786+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.EFCore.Model.Package"'. (8a1b66c8)
+2020-02-13T15:14:42.5381033+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.Activate (BiddingEngineAPI)" in 95.9233ms (afa2e885)
+2020-02-13T15:14:42.5385210+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.Activate (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:42.5400782+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/Api/Packages/Activate/5   Responded with [200] in 101ms (de572ddd)
+2020-02-13T15:14:42.5403802+02:00 800000a6-0006-fa00-b63f-84710c7967bb [INF] Request finished in 102.1884ms 200 application/json (791a596a)
+2020-02-13T15:14:42.7140792+02:00 800000a7-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599682658   (ca22a1cb)
+2020-02-13T15:14:42.7141525+02:00 800000a7-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:42.7143276+02:00 800000a7-0006-fa00-b63f-84710c7967bb [INF] Request finished in 0.3272ms 204  (791a596a)
+2020-02-13T15:14:42.7195631+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Packages/GetForAdmin/UserType/2?_=1581599682658 application/json; charset=utf-8  (ca22a1cb)
+2020-02-13T15:14:42.7197078+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-13T15:14:42.7198338+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (500cc934)
+2020-02-13T15:14:42.7199969+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetForAdmin\", controller = \"Packages\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Packages.PackageModel] GetForAdmin(Int32)" on controller "BiddingEngineAPI.Controllers.PackagesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-13T15:14:42.7283847+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userTypeId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Bidding_Number], [p].[Create_Date], [p].[Description], [p].[IsActive], [p].[Name], [p].[Package_Id], [p].[Price], 0 AS [Subscribers_Number], [u].[UserType_Name] AS [UserType], COALESCE([p].[UserType_Id], 0) AS [UserType_Id]
+FROM [Packages] AS [p]
+LEFT JOIN [UserTypes] AS [u] ON [p].[UserType_Id] = [u].[UserType_Id]
+WHERE [p].[UserType_Id] = @__userTypeId_0" (0723d8ff)
+2020-02-13T15:14:42.7290356+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Packages.PackageModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-13T15:14:42.7292900+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)" in 9.2412ms (afa2e885)
+2020-02-13T15:14:42.7293213+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.PackagesController.GetForAdmin (BiddingEngineAPI)"' (99874f2b)
+2020-02-13T15:14:42.7297696+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Packages/GetForAdmin/UserType/2 ?_=1581599682658  Responded with [200] in 10ms (3d210abc)
+2020-02-13T15:14:42.7298846+02:00 800000a8-0006-fa00-b63f-84710c7967bb [INF] Request finished in 10.3402ms 200 application/json (791a596a)

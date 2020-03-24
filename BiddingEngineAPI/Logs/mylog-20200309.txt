@@ -1,0 +1,152 @@
+2020-03-09T17:11:46.9894797+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-09T17:11:49.7951530+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-09T17:11:49.8202513+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-09T17:11:49.8234950+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-09T17:11:49.8243390+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-09T17:11:50.1846955+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-09T17:11:50.2281413+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-09T17:11:50.4373187+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-09T17:11:51.0975430+02:00  [INF] Executed DbCommand ("247"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:11:51.1997886+02:00  [INF] Executed DbCommand ("92"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:11:51.4326900+02:00  [INF] Executed DbCommand ("230"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:11:55.1984461+02:00 8000021d-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-09T17:11:55.5486964+02:00 8000021d-0000-fc00-b63f-84710c7967bb [INF] Request finished in 353.7499ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-09T17:11:55.8022311+02:00 8000021e-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-09T17:11:56.3492665+02:00 8000021e-0000-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-09T17:11:56.3495524+02:00 8000021e-0000-fc00-b63f-84710c7967bb [INF] Request finished in 547.9884ms 0 text/css (791a596a)
+2020-03-09T17:11:56.6328549+02:00 80000081-0004-f500-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-09T17:11:56.6359043+02:00 80000081-0004-f500-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-09T17:11:56.6362755+02:00 80000081-0004-f500-b63f-84710c7967bb [INF] Request finished in 3.773ms 200 image/png (791a596a)
+2020-03-09T17:11:56.7319215+02:00 80000082-0004-f500-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-09T17:11:58.1362270+02:00 80000082-0004-f500-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotSupportedException: Conflicting method/path combination "GET api/Users" for actions - BiddingEngineAPI.Controllers.UsersController.Get (BiddingEngineAPI),BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-09T17:11:58.1737977+02:00 80000082-0004-f500-b63f-84710c7967bb [INF] Request finished in 1441.5672ms 500 text/plain (791a596a)
+2020-03-09T17:16:54.9856537+02:00 80000298-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-09T17:16:54.9910451+02:00 80000298-0007-fc00-b63f-84710c7967bb [INF] Request finished in 3.1072ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-09T17:16:55.3146961+02:00 80000299-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-09T17:16:55.3159230+02:00 80000299-0007-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-09T17:16:55.3161054+02:00 80000299-0007-fc00-b63f-84710c7967bb [INF] Request finished in 1.5567ms 200 image/png (791a596a)
+2020-03-09T17:16:55.3499681+02:00 8000029a-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-09T17:16:55.3750074+02:00 8000029a-0007-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotSupportedException: Conflicting method/path combination "GET api/Users" for actions - BiddingEngineAPI.Controllers.UsersController.Get (BiddingEngineAPI),BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-09T17:16:55.3760451+02:00 8000029a-0007-fc00-b63f-84710c7967bb [INF] Request finished in 26.1024ms 500 text/plain (791a596a)
+2020-03-09T17:17:28.2407018+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-09T17:17:28.7337054+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-09T17:17:28.7797868+02:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-09T17:17:28.7836997+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-09T17:17:28.7842992+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-09T17:17:28.8268823+02:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-09T17:17:28.8455399+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-09T17:17:28.8962475+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-09T17:17:29.0362491+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:17:29.0912685+02:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:17:29.0987783+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-09T17:17:29.4385594+02:00 800002bb-0006-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-09T17:17:29.5420496+02:00 800002bb-0006-f900-b63f-84710c7967bb [INF] Request finished in 106.2205ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-09T17:17:29.7315929+02:00 800002bc-0006-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-09T17:17:29.7530457+02:00 800002bc-0006-f900-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-09T17:17:29.7533182+02:00 800002bc-0006-f900-b63f-84710c7967bb [INF] Request finished in 21.884ms 0 image/png (791a596a)
+2020-03-09T17:17:29.7743208+02:00 80000220-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-09T17:17:30.0747468+02:00 80000220-0000-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotSupportedException: Conflicting method/path combination "GET api/Users" for actions - BiddingEngineAPI.Controllers.UsersController.Get (BiddingEngineAPI),BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-09T17:17:30.0965955+02:00 80000220-0000-fc00-b63f-84710c7967bb [INF] Request finished in 322.1719ms 500 text/plain (791a596a)
+2020-03-09T17:17:42.8074761+02:00 80000221-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index   (ca22a1cb)
+2020-03-09T17:17:42.8127115+02:00 80000221-0000-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-09T17:17:45.2436241+02:00 80000221-0000-fc00-b63f-84710c7967bb [INF] Request finished in 2437.2428ms 404  (791a596a)
+2020-03-09T17:17:45.2734603+02:00 80000222-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2020-03-09T17:17:45.9223904+02:00 80000222-0000-fc00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/favicon.ico   
+                                                     Responded with [404] in 613ms (b98ef6df)
+2020-03-09T17:17:45.9368422+02:00 80000222-0000-fc00-b63f-84710c7967bb [INF] Request finished in 663.364ms 404 application/json (791a596a)
+2020-03-09T17:17:51.1315671+02:00 80000223-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2020-03-09T17:17:51.1504740+02:00 80000223-0000-fc00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/   
+                                                     Responded with [404] in 16ms (126ca94b)
+2020-03-09T17:17:51.1511835+02:00 80000223-0000-fc00-b63f-84710c7967bb [INF] Request finished in 20.2177ms 404 application/json (791a596a)
+2020-03-09T17:17:58.9096229+02:00 80000224-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-09T17:17:58.9125694+02:00 80000224-0000-fc00-b63f-84710c7967bb [INF] Request finished in 3.5235ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-09T17:17:59.0316134+02:00 80000225-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-09T17:17:59.0426469+02:00 80000225-0000-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotSupportedException: Conflicting method/path combination "GET api/Users" for actions - BiddingEngineAPI.Controllers.UsersController.Get (BiddingEngineAPI),BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-09T17:17:59.0436034+02:00 80000225-0000-fc00-b63f-84710c7967bb [INF] Request finished in 12.0487ms 500 text/plain (791a596a)
+2020-03-09T17:18:02.3185714+02:00 80000226-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-09T17:18:02.3279031+02:00 80000226-0000-fc00-b63f-84710c7967bb [INF] Request finished in 9.3787ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-09T17:18:02.4465970+02:00 80000227-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-09T17:18:02.4584152+02:00 80000227-0000-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NotSupportedException: Conflicting method/path combination "GET api/Users" for actions - BiddingEngineAPI.Controllers.UsersController.Get (BiddingEngineAPI),BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-09T17:18:02.4594007+02:00 80000227-0000-fc00-b63f-84710c7967bb [INF] Request finished in 13.0758ms 500 text/plain (791a596a)

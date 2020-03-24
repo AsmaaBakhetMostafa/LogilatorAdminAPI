@@ -1,0 +1,24 @@
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.deps.json
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.csprojAssemblyReference.cache
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfoInputs.cache
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfo.cs
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.deps.json
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.csprojAssemblyReference.cache
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfoInputs.cache
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfo.cs
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.deps.json
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\bin\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfoInputs.cache
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.AssemblyInfo.cs
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.dll
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.pdb
+D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\obj\Debug\netcoreapp3.0\BiddingEngineAPI.EFCore.csprojAssemblyReference.cache

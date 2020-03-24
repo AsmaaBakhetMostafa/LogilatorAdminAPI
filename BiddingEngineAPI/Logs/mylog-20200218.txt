@@ -1,0 +1,1308 @@
+2020-02-18T00:06:39.4277772+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/x-www-form-urlencoded; charset=UTF-8 269 (ca22a1cb)
+2020-02-18T00:06:39.4289313+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:06:39.4890622+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:06:39.4903878+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:06:39.5036765+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (8a1b66c8)
+2020-02-18T00:06:39.5043926+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 13.6773ms (afa2e885)
+2020-02-18T00:06:39.5044974+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:06:39.5068181+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  nameAr=eq&nameEn=wewqe&descr=erw&isActive=true&fileds%5B0%5D%5BfiledIndex%5D=0&fileds%5B0%5D%5BnameAr%5D=kjkj&fileds%5B0%5D%5BnameEn%5D=fss&fileds%5B0%5D%5BisRequried%5D=1&fileds%5B0%5D%5BfiledType%5D=3&fileds%5B0%5D%5BisRelated%5D=false&fileds%5B0%5D%5BFiledIndex%5D=1 Responded with [415] in 77ms (23b7b2c8)
+2020-02-18T00:06:39.5129855+02:00 8000001f-0000-fd00-b63f-84710c7967bb [INF] Request finished in 85.5466ms 415 application/json (791a596a)
+2020-02-18T00:06:52.7076409+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/x-www-form-urlencoded; charset=UTF-8 492 (ca22a1cb)
+2020-02-18T00:06:52.7082375+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:06:52.7094199+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:06:52.7098840+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:06:52.7115713+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (8a1b66c8)
+2020-02-18T00:06:52.7120798+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 2.0196ms (afa2e885)
+2020-02-18T00:06:52.7121602+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:06:52.7151774+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  nameAr=eq&nameEn=wewqe&descr=erw&isActive=true&fileds%5B0%5D%5BfiledIndex%5D=0&fileds%5B0%5D%5BnameAr%5D=kjkj&fileds%5B0%5D%5BnameEn%5D=fss&fileds%5B0%5D%5BisRequried%5D=1&fileds%5B0%5D%5BfiledType%5D=3&fileds%5B0%5D%5BisRelated%5D=false&fileds%5B0%5D%5BFiledIndex%5D=1&fileds%5B1%5D%5BfiledIndex%5D=0&fileds%5B1%5D%5BnameAr%5D=kjkj&fileds%5B1%5D%5BnameEn%5D=fss&fileds%5B1%5D%5BisRequried%5D=1&fileds%5B1%5D%5BfiledType%5D=3&fileds%5B1%5D%5BisRelated%5D=false&fileds%5B1%5D%5BFiledIndex%5D=1 Responded with [415] in 6ms (ebc39208)
+2020-02-18T00:06:52.7157742+02:00 80000020-0000-fd00-b63f-84710c7967bb [INF] Request finished in 8.3192ms 415 application/json (791a596a)
+2020-02-18T00:09:29.5218181+02:00 8000001a-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:09:29.5224162+02:00 8000001a-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:09:29.5243053+02:00 8000001a-0006-fc00-b63f-84710c7967bb [INF] Request finished in 2.524ms 204  (791a596a)
+2020-02-18T00:09:29.5267514+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json 269 (ca22a1cb)
+2020-02-18T00:09:29.5270200+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:09:29.5279032+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:09:29.5282410+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:09:29.8698719+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:09:29.8709629+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 342.5957ms (afa2e885)
+2020-02-18T00:09:29.8710130+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:09:29.8718544+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  nameAr=eq&nameEn=wewqe&descr=erw&isActive=true&fileds%5B0%5D%5BfiledIndex%5D=0&fileds%5B0%5D%5BnameAr%5D=kjkj&fileds%5B0%5D%5BnameEn%5D=fss&fileds%5B0%5D%5BisRequried%5D=1&fileds%5B0%5D%5BfiledType%5D=3&fileds%5B0%5D%5BisRelated%5D=false&fileds%5B0%5D%5BFiledIndex%5D=1 Responded with [400] in 344ms (8a53e398)
+2020-02-18T00:09:29.8750103+02:00 8000001b-0006-fc00-b63f-84710c7967bb [INF] Request finished in 348.2974ms 400 application/json (791a596a)
+2020-02-18T00:11:59.8988446+02:00 80000024-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:11:59.8997304+02:00 80000024-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:11:59.9006811+02:00 80000024-0000-fd00-b63f-84710c7967bb [INF] Request finished in 1.973ms 204  (791a596a)
+2020-02-18T00:11:59.9030873+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json 252 (ca22a1cb)
+2020-02-18T00:11:59.9038714+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:11:59.9063670+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:11:59.9069629+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:11:59.9089036+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:11:59.9094095+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 2.299ms (afa2e885)
+2020-02-18T00:11:59.9095300+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:11:59.9105163+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  nameAr=&nameEn=&descr=&isActive=true&fileds%5B0%5D%5BfiledIndex%5D=0&fileds%5B0%5D%5BnameAr%5D=&fileds%5B0%5D%5BnameEn%5D=&fileds%5B0%5D%5BisRequried%5D=1&fileds%5B0%5D%5BfiledType%5D=0&fileds%5B0%5D%5BisRelated%5D=false&fileds%5B0%5D%5BFiledIndex%5D=1 Responded with [400] in 6ms (091dc7fc)
+2020-02-18T00:11:59.9139043+02:00 8000000f-0005-fe00-b63f-84710c7967bb [INF] Request finished in 10.9503ms 400 application/json (791a596a)
+2020-02-18T00:14:19.4889605+02:00 8000001b-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:14:19.4896114+02:00 8000001b-0003-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:14:19.4903519+02:00 8000001b-0003-fe00-b63f-84710c7967bb [INF] Request finished in 1.4772ms 204  (791a596a)
+2020-02-18T00:14:19.4985517+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 190 (ca22a1cb)
+2020-02-18T00:14:19.4990040+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:14:19.5003516+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:14:19.5009230+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:14:19.6127604+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:14:19.6132227+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 112.1846ms (afa2e885)
+2020-02-18T00:14:19.6132712+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:14:19.6143438+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":"1","filedType":"0","isRelated":false,"filedOptions":[],"FiledIndex":"1"}]} Responded with [400] in 115ms (9e1a4c88)
+2020-02-18T00:14:19.6146622+02:00 80000006-0002-fa00-b63f-84710c7967bb [INF] Request finished in 116.3511ms 400 application/json (791a596a)
+2020-02-18T00:16:23.1353162+02:00 8000001d-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:16:23.1356743+02:00 8000001d-0003-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:16:23.1363650+02:00 8000001d-0003-fe00-b63f-84710c7967bb [INF] Request finished in 1.113ms 204  (791a596a)
+2020-02-18T00:16:23.1386232+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 192 (ca22a1cb)
+2020-02-18T00:16:23.1388212+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:16:23.1399503+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:16:23.1404446+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:16:23.2040838+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:16:23.2045456+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 63.9274ms (afa2e885)
+2020-02-18T00:16:23.2045932+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:16:23.2056644+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":"0","isRelated":false,"filedOptions":[],"FiledIndex":"1"}]} Responded with [400] in 66ms (ca029037)
+2020-02-18T00:16:23.2116450+02:00 80000027-0004-fc00-b63f-84710c7967bb [INF] Request finished in 73.068ms 400 application/json (791a596a)
+2020-02-18T00:18:16.6383729+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T00:18:17.1456398+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:18:17.1699469+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:18:17.1737203+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:18:17.1744795+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:18:17.2246847+02:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T00:18:17.2445480+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T00:18:17.5298388+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T00:18:17.5299929+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T00:18:17.5300509+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI" (b5d60022)
+2020-02-18T00:18:17.5658937+02:00 8000000b-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T00:18:17.6609144+02:00 8000000b-0001-fd00-b63f-84710c7967bb [INF] Request finished in 100.3222ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T00:18:18.0362594+02:00 8000000c-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T00:18:18.1143658+02:00 8000000c-0001-fd00-b63f-84710c7967bb [INF] Request finished in 78.6221ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T00:18:42.4659407+02:00 80000026-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:18:42.4702376+02:00 80000026-0000-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T00:18:42.4735666+02:00 80000026-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:18:42.4765512+02:00 80000026-0000-fd00-b63f-84710c7967bb [INF] Request finished in 10.9665ms 204  (791a596a)
+2020-02-18T00:18:42.4784110+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 207 (ca22a1cb)
+2020-02-18T00:18:42.4793284+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:18:42.6858611+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:18:42.7239948+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:18:42.7678608+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:18:42.7754643+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 46.2678ms (afa2e885)
+2020-02-18T00:18:42.7755733+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:18:42.9635317+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"www","nameEn":"qq","descr":"rrr","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":"3","isRelated":false,"filedOptions":[],"FiledIndex":"1"}]} Responded with [400] in 468ms (967d50a0)
+2020-02-18T00:18:42.9659559+02:00 80000009-0000-fb00-b63f-84710c7967bb [INF] Request finished in 487.6769ms 400 application/json (791a596a)
+2020-02-18T00:19:36.2426313+02:00 80000027-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:19:36.2441622+02:00 80000027-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:19:36.2466162+02:00 80000027-0000-fd00-b63f-84710c7967bb [INF] Request finished in 4.4523ms 204  (791a596a)
+2020-02-18T00:19:36.2516639+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 343 (ca22a1cb)
+2020-02-18T00:19:36.2518408+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:19:36.2646859+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:19:36.2652825+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:19:36.2722091+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:19:36.2726946+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 7.2578ms (afa2e885)
+2020-02-18T00:19:36.2727599+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:19:36.2737287+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"www","nameEn":"qq","descr":"rrr","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":"3","isRelated":false,"filedOptions":[],"FiledIndex":"1"},{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":"3","isRelated":false,"filedOptions":[],"FiledIndex":"1"}]} Responded with [400] in 21ms (1c0057a4)
+2020-02-18T00:19:36.2751698+02:00 8000000a-0000-fb00-b63f-84710c7967bb [INF] Request finished in 23.5342ms 400 application/json (791a596a)
+2020-02-18T00:20:45.3213784+02:00 80000028-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:20:45.3220646+02:00 80000028-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:20:45.3227335+02:00 80000028-0000-fd00-b63f-84710c7967bb [INF] Request finished in 1.5409ms 204  (791a596a)
+2020-02-18T00:20:45.3605856+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 205 (ca22a1cb)
+2020-02-18T00:20:45.3607873+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:20:45.3644939+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:20:45.3651713+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:20:45.3737051+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:20:45.3742453+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 8.9225ms (afa2e885)
+2020-02-18T00:20:45.3743333+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:20:45.3754053+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"www","nameEn":"qq","descr":"rrr","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":"1"}]} Responded with [400] in 14ms (83a6d63e)
+2020-02-18T00:20:45.3761703+02:00 8000000b-0000-fb00-b63f-84710c7967bb [INF] Request finished in 15.6813ms 400 application/json (791a596a)
+2020-02-18T00:22:12.7911790+02:00 80000029-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:22:12.7917888+02:00 80000029-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:22:12.7926492+02:00 80000029-0000-fd00-b63f-84710c7967bb [INF] Request finished in 1.5776ms 204  (791a596a)
+2020-02-18T00:22:12.7998677+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 203 (ca22a1cb)
+2020-02-18T00:22:12.8005211+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:22:12.8022308+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:22:12.8028323+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:22:36.7099194+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 23906.8813ms (afa2e885)
+2020-02-18T00:22:36.7100851+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:22:36.8087094+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("253"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:23:15.6120314+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1,039"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FormFileds] ([CreateDate], [FiledType], [FormId], [IsActive], [IsRelated], [IsRequired], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [FormFileds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:23:23.4075743+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"www","nameEn":"qq","descr":"rrr","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":1}]} Responded with [200] in 70606ms (7a4feb78)
+2020-02-18T00:23:23.4081910+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] Request finished in 70608.6366ms 200 application/json (791a596a)
+2020-02-18T00:24:50.1204892+02:00 8000000d-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:24:50.1212171+02:00 8000000d-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:24:50.1221872+02:00 8000000d-0000-fb00-b63f-84710c7967bb [INF] Request finished in 1.7515ms 204  (791a596a)
+2020-02-18T00:24:50.1388055+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 335 (ca22a1cb)
+2020-02-18T00:24:50.1393107+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:24:50.1407025+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:24:50.1414719+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:24:51.7370810+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 1595.3198ms (afa2e885)
+2020-02-18T00:24:51.7372764+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:24:51.7402838+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"www","nameEn":"qq","descr":"rrr","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":1},{"filedIndex":0,"nameAr":"dfd","nameEn":"eeee","isRequried":false,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":1}]} Responded with [200] in 1599ms (caa119bd)
+2020-02-18T00:24:51.7460073+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:24:52.4600401+02:00 8000000e-0000-fb00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityReferenceMap.Remove(Object entity, IEntityType entityType, EntityState oldState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityReferenceMap.Update(InternalEntityEntry entry, EntityState state, Nullable`1 oldState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StateChanging(InternalEntityEntry entry, EntityState newState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.AcceptChanges()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.AcceptAllChanges(IReadOnlyList`1 changedEntries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityReferenceMap.Remove(Object entity, IEntityType entityType, EntityState oldState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityReferenceMap.Update(InternalEntityEntry entry, EntityState state, Nullable`1 oldState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StateChanging(InternalEntityEntry entry, EntityState newState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.AcceptChanges()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.AcceptAllChanges(IReadOnlyList`1 changedEntries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T00:24:52.5305431+02:00 8000000e-0000-fb00-b63f-84710c7967bb [ERR] Connection ID ""18086456105130524680"", Request ID ""8000000e-0000-fb00-b63f-84710c7967bb"": An unhandled exception was thrown by the application. (bf316047)
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.Dispose()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Dispose()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Dispose()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetState()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetState()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextPool`1.Return(TContext context)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextPool`1.Lease.System.IAsyncDisposable.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnCompleted()
+2020-02-18T00:24:52.5995567+02:00 8000000e-0000-fb00-b63f-84710c7967bb [INF] Request finished in 2392.0731ms 200 application/json (791a596a)
+2020-02-18T00:27:15.3047054+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T00:27:15.5691297+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:27:15.6624997+02:00  [INF] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:27:15.6668276+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:27:15.6675032+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:27:15.7046883+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T00:27:15.7208885+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T00:27:15.8347794+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T00:27:15.8349308+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T00:27:15.8349727+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI" (b5d60022)
+2020-02-18T00:27:15.8604186+02:00 80000026-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T00:27:15.9215775+02:00 80000026-0003-fd00-b63f-84710c7967bb [INF] Request finished in 63.2465ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T00:27:16.1228584+02:00 80000027-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T00:27:16.2029099+02:00 80000027-0003-fd00-b63f-84710c7967bb [INF] Request finished in 80.0662ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T00:27:24.2219707+02:00 80000029-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:27:24.2270375+02:00 80000029-0007-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T00:27:24.2298555+02:00 80000029-0007-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:27:24.2323762+02:00 80000029-0007-ff00-b63f-84710c7967bb [INF] Request finished in 10.8958ms 204  (791a596a)
+2020-02-18T00:27:24.2530210+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; 859 (ca22a1cb)
+2020-02-18T00:27:24.2568170+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:27:24.3647787+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:27:24.3961979+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:27:24.4537766+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:27:24.4622652+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 60.8871ms (afa2e885)
+2020-02-18T00:27:24.4623502+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:27:24.7032787+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"sdedfgftds","nameEn":"gfdsasdfgh","isRequried":false,"filedType":2,"isRelated":false,"filedOptions":[{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"sdedfgftds","nameEn":"gfdsasdfgh","isRequried":false,"filedType":2,"isRelated":false,"filedOptions":[{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [400] in 440ms (4c1bf9a8)
+2020-02-18T00:27:24.7057182+02:00 80000015-0004-fd00-b63f-84710c7967bb [INF] Request finished in 452.9008ms 400 application/json (791a596a)
+2020-02-18T00:27:46.2416094+02:00 8000002a-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:27:46.2427480+02:00 8000002a-0007-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:27:46.2437613+02:00 8000002a-0007-ff00-b63f-84710c7967bb [INF] Request finished in 2.53ms 204  (791a596a)
+2020-02-18T00:27:46.2478706+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; 1270 (ca22a1cb)
+2020-02-18T00:27:46.2484062+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:27:46.2515897+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:27:46.2575253+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:27:48.9674888+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 2709.8104ms (afa2e885)
+2020-02-18T00:27:48.9675659+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:27:48.9675737+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:27:49.9596382+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"dfdfd","nameEn":"sdsd","descr":"dfdf","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"sdedfgftds","nameEn":"gfdsasdfgh","isRequried":false,"filedType":2,"isRelated":false,"filedOptions":[{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"sdedfgftds","nameEn":"gfdsasdfgh","isRequried":false,"filedType":2,"isRelated":false,"filedOptions":[{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"sdedfgftds","nameEn":"gfdsasdfgh","isRequried":false,"filedType":2,"isRelated":false,"filedOptions":[{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":2,"nameAr":"ada","nameEn":"fddd","isActive":true,"isRelated":false,"relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [200] in 3710ms (68dfff07)
+2020-02-18T00:27:49.9611271+02:00 80000016-0004-fd00-b63f-84710c7967bb [INF] Request finished in 3713.7285ms 200 application/json (791a596a)
+2020-02-18T00:28:12.1903202+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T00:28:12.5314718+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:28:12.5595118+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:28:12.5625017+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:28:12.5629979+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:28:12.5770260+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T00:28:12.5933006+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T00:28:12.6980852+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T00:28:12.6981810+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T00:28:12.6982084+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI" (b5d60022)
+2020-02-18T00:28:12.7160380+02:00 80000032-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T00:28:12.7659816+02:00 80000032-0001-ff00-b63f-84710c7967bb [INF] Request finished in 52.1974ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T00:28:12.9126108+02:00 80000033-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T00:28:12.9898833+02:00 80000033-0001-ff00-b63f-84710c7967bb [INF] Request finished in 77.2852ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T00:28:50.1852798+02:00 80000030-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:28:50.1890324+02:00 80000030-0004-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T00:28:50.1921388+02:00 80000030-0004-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:28:50.1952204+02:00 80000030-0004-fc00-b63f-84710c7967bb [INF] Request finished in 10.3557ms 204  (791a596a)
+2020-02-18T00:28:50.2138345+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 282 (ca22a1cb)
+2020-02-18T00:28:50.2146429+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:28:50.3344233+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:28:50.3717717+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:28:50.3953575+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T00:28:50.4061848+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 27.8155ms (afa2e885)
+2020-02-18T00:28:50.4062882+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:28:50.5300742+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  nameAr=werw&nameEn=qqq&descr=erere&isActive=true&fileds%5B0%5D%5BfiledIndex%5D=0&fileds%5B0%5D%5BnameAr%5D=resdfg&fileds%5B0%5D%5BnameEn%5D=jnhgtrer&fileds%5B0%5D%5BisRequried%5D=false&fileds%5B0%5D%5BfiledType%5D=4&fileds%5B0%5D%5BisRelated%5D=false&fileds%5B0%5D%5BFiledIndex%5D=1 Responded with [400] in 308ms (6242559e)
+2020-02-18T00:28:50.5325968+02:00 8000000f-0002-fa00-b63f-84710c7967bb [INF] Request finished in 318.9549ms 400 application/json (791a596a)
+2020-02-18T00:29:35.5200516+02:00 80000031-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:29:35.5211702+02:00 80000031-0004-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:29:35.5220863+02:00 80000031-0004-fc00-b63f-84710c7967bb [INF] Request finished in 2.4859ms 204  (791a596a)
+2020-02-18T00:29:35.5413474+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 214 (ca22a1cb)
+2020-02-18T00:29:35.5416532+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:29:35.5442459+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:29:35.5475129+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:29:37.6297386+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:29:37.6297386+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 2082.0664ms (afa2e885)
+2020-02-18T00:29:37.6298397+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:29:41.1571934+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"werw","nameEn":"qqq","descr":"erere","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"resdfg","nameEn":"jnhgtrer","isRequried":false,"filedType":4,"isRelated":false,"filedOptions":[],"FiledIndex":1}]} Responded with [200] in 5615ms (cd70314a)
+2020-02-18T00:29:41.1585210+02:00 80000010-0002-fa00-b63f-84710c7967bb [INF] Request finished in 5617.2957ms 200 application/json (791a596a)
+2020-02-18T00:37:20.1626133+02:00 8000003f-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:37:20.1632786+02:00 8000003f-0007-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:37:20.1638352+02:00 8000003f-0007-ff00-b63f-84710c7967bb [INF] Request finished in 3.5576ms 204  (791a596a)
+2020-02-18T00:37:20.1903247+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 215 (ca22a1cb)
+2020-02-18T00:37:20.1904189+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:37:20.1926350+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:37:20.1930045+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:37:21.7999056+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 1606.7598ms (afa2e885)
+2020-02-18T00:37:21.7999646+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:37:21.8007286+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adasda","nameEn":"aweqwewq","descr":"wrer","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"werwer","nameEn":"wewq","isRequried":true,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":1}]} Responded with [200] in 1610ms (67bf2d91)
+2020-02-18T00:37:21.8019142+02:00 80000012-0002-fa00-b63f-84710c7967bb [INF] Request finished in 1611.6773ms 200 application/json (791a596a)
+2020-02-18T00:37:21.9185611+02:00 80000012-0002-fa00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("97"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([Id], [CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);" (627a98df)
+2020-02-18T00:37:34.3870307+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T00:37:34.6608331+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:37:34.6860586+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:37:34.6893744+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T00:37:34.6898001+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T00:37:34.7091687+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T00:37:34.7256694+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T00:37:34.8504383+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T00:37:34.8505605+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T00:37:34.8506033+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\API\Solution\BiddingEngineAPI" (b5d60022)
+2020-02-18T00:37:34.8715182+02:00 8000001b-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T00:37:34.9376461+02:00 8000001b-0000-fc00-b63f-84710c7967bb [INF] Request finished in 68.6602ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T00:37:35.0867697+02:00 8000001c-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T00:37:35.1617945+02:00 8000001c-0000-fc00-b63f-84710c7967bb [INF] Request finished in 75.0468ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T00:45:01.0376562+02:00 80000035-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T00:45:01.0435116+02:00 80000035-0001-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T00:45:01.0459308+02:00 80000035-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:45:01.0479443+02:00 80000035-0001-ff00-b63f-84710c7967bb [INF] Request finished in 10.7809ms 204  (791a596a)
+2020-02-18T00:45:01.0745795+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 216 (ca22a1cb)
+2020-02-18T00:45:01.0753971+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T00:45:01.1639719+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T00:45:01.2003595+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T00:45:04.3986358+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 3192.6282ms (afa2e885)
+2020-02-18T00:45:04.3987599+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T00:45:04.5102819+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("44"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T00:45:05.2326391+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adasda","nameEn":"aweqwewq","descr":"wrer","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"werwer","nameEn":"wewq","isRequried":false,"filedType":3,"isRelated":false,"filedOptions":[],"FiledIndex":1}]} Responded with [200] in 4145ms (ed73cd2a)
+2020-02-18T00:45:05.2360766+02:00 80000039-0005-fe00-b63f-84710c7967bb [INF] Request finished in 4161.7035ms 200 application/json (791a596a)
+2020-02-18T12:36:03.6585958+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T12:36:04.3172678+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T12:36:04.3517314+02:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T12:36:04.3545647+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T12:36:04.3549721+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T12:36:04.3966356+02:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T12:36:04.4343018+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T12:36:05.4236178+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T12:36:05.4238460+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T12:36:05.4238877+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T12:36:05.5579560+02:00 8000002c-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T12:36:05.8152540+02:00 8000002c-0003-fd00-b63f-84710c7967bb [INF] Request finished in 260.7646ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T12:36:06.8246927+02:00 8000002d-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T12:36:07.1274105+02:00 8000002d-0003-fd00-b63f-84710c7967bb [INF] Request finished in 303.0944ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T12:38:52.8123848+02:00 8000000e-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T12:38:52.8454646+02:00 8000000e-0004-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T12:38:53.8767450+02:00 8000000e-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T12:38:54.2094041+02:00 8000000e-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T12:38:55.1578480+02:00 8000000e-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:22:57.1647385+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:23:02.0566721+02:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:23:02.5803140+02:00  [INF] Executed DbCommand ("494"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:23:02.5845219+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:23:02.6029292+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:23:02.7904677+02:00  [INF] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:23:02.8585236+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:23:05.1568341+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:23:05.1570760+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:23:05.1571088+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:23:05.5429639+02:00 80000010-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:23:06.2968268+02:00 80000010-0004-fb00-b63f-84710c7967bb [INF] Request finished in 765.4859ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:23:07.0097059+02:00 80000011-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:23:07.7646092+02:00 80000011-0004-fb00-b63f-84710c7967bb [INF] Request finished in 755.1931ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:23:18.9502474+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:23:18.9664792+02:00 8000003d-0005-fe00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T13:23:19.9484037+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:23:20.1891529+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:23:20.8000585+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("94"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:24:53.1868817+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 92991.0685ms (afa2e885)
+2020-02-18T13:24:53.2056542+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T13:24:54.5396290+02:00 8000003d-0005-fe00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Form -> FormViewModel
+BiddingEngineAPI.EFCore.Model.Form -> BiddingEngineAPI.ApiModels.Users.FormViewModel
+   at lambda_method(Closure , Form , FormViewModel , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at BiddingEngineAPI.Mapping.AutoMapperAdapter.Map[T](Object objectToMap) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Mapping\AutoMapperAdapter.cs:line 23
+   at BiddingEngineAPI.ApiModels.Users.FormExtensions.ToModel(Form target, IAutoMapper mapper) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\ApiModels\Form\Form\FormViewModel.cs:line 19
+   at BiddingEngineAPI.Services.FormService.GetActiveForm(Int32 formType) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Form\Form\FormService.cs:line 48
+   at BiddingEngineAPI.Controllers.FormController.Get(Int32 formtype) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\FormController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-02-18T13:24:55.6630968+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetActiveForm/1   Responded with [500] in 96644ms (39f6f730)
+2020-02-18T13:24:55.7398866+02:00 8000003d-0005-fe00-b63f-84710c7967bb [INF] Request finished in 96789.8609ms 500 application/json (791a596a)
+2020-02-18T13:24:57.3606590+02:00 8000003e-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:24:57.3670502+02:00 8000003e-0005-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:24:57.3679473+02:00 8000003e-0005-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:24:57.3847778+02:00 8000003e-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:32:53.9843566+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:32:54.6228067+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:32:54.6512860+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:32:54.6545440+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:32:54.6552422+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:32:54.6869876+02:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:32:54.7028537+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:32:55.0206034+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:32:55.0207498+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:32:55.0207988+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:32:55.0749670+02:00 8000000b-0002-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:32:55.1888020+02:00 8000000b-0002-fd00-b63f-84710c7967bb [INF] Request finished in 116.9869ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:32:55.4342401+02:00 8000000c-0002-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:32:55.5374619+02:00 8000000c-0002-fd00-b63f-84710c7967bb [INF] Request finished in 103.412ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:33:41.5016133+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:33:41.8481658+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:33:41.8707549+02:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:33:41.8735996+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:33:41.8740427+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:33:41.8895868+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:33:41.9048735+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:33:42.0199966+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:33:42.0201298+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:33:42.0201612+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:33:42.0410388+02:00 80000028-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:33:42.0965283+02:00 80000028-0001-fd00-b63f-84710c7967bb [INF] Request finished in 59.5689ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:33:42.3232276+02:00 80000029-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:33:42.4056072+02:00 80000029-0001-fd00-b63f-84710c7967bb [INF] Request finished in 82.8437ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:33:56.4979469+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:33:56.5015862+02:00 8000000e-0002-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T13:33:56.6874399+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:33:56.7157423+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:34:00.6263939+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:34:17.5143844+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 20790.9919ms (afa2e885)
+2020-02-18T13:34:17.5159248+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T13:34:17.8406890+02:00 8000000e-0002-fd00-b63f-84710c7967bb [ERR] [500]: Unhandled Exception occurred. Unable to process the request. (a13e52f5)
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at BiddingEngineAPI.ApiModels.Users.FormExtensions.ToModel(Form target, IAutoMapper mapper) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\ApiModels\Form\Form\FormViewModel.cs:line 26
+   at BiddingEngineAPI.Services.FormService.GetActiveForm(Int32 formType) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Services\Form\Form\FormService.cs:line 48
+   at BiddingEngineAPI.Controllers.FormController.Get(Int32 formtype) in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI\Controllers\FormController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResourceFilter()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+2020-02-18T13:34:18.0270885+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetActiveForm/1   Responded with [500] in 21519ms (c9861a5e)
+2020-02-18T13:34:18.0303091+02:00 8000000e-0002-fd00-b63f-84710c7967bb [INF] Request finished in 21532.6859ms 500 application/json (791a596a)
+2020-02-18T13:34:19.9295278+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:34:19.9334098+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:34:19.9340870+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:34:26.3020101+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:35:09.9540486+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T13:35:10.0375242+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 50103.1794ms (afa2e885)
+2020-02-18T13:35:10.0377079+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T13:35:10.7096152+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetActiveForm/1   Responded with [200] in 50777ms (3757af60)
+2020-02-18T13:35:10.7150007+02:00 8000000f-0002-fd00-b63f-84710c7967bb [INF] Request finished in 50785.8374ms 200 application/json (791a596a)
+2020-02-18T13:35:21.2372546+02:00 8000002b-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:35:21.2861483+02:00 8000002b-0001-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:35:21.2867104+02:00 8000002b-0001-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:37:57.5731739+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:37:57.8954492+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:37:57.9180819+02:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:37:57.9212270+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:37:57.9217346+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:37:57.9381072+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:37:57.9537517+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:37:58.0630364+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:37:58.0631622+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:37:58.0631954+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:37:58.0881830+02:00 80000013-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:37:58.1437907+02:00 80000013-0004-fb00-b63f-84710c7967bb [INF] Request finished in 57.6643ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:37:58.4621716+02:00 80000014-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:37:58.5475023+02:00 80000014-0004-fb00-b63f-84710c7967bb [INF] Request finished in 85.7831ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:38:05.1028132+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:38:05.1063237+02:00 80000015-0004-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T13:38:05.1903178+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:38:05.2311457+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:38:08.8717063+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:38:59.0269631+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T13:38:59.0413667+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 53803.1615ms (afa2e885)
+2020-02-18T13:38:59.0415236+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T13:38:59.2715095+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetActiveForm/1   Responded with [200] in 54159ms (d5e79214)
+2020-02-18T13:38:59.2742575+02:00 80000015-0004-fb00-b63f-84710c7967bb [INF] Request finished in 54171.7675ms 200 application/json (791a596a)
+2020-02-18T13:42:04.9547189+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:42:05.2594207+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:42:05.2850958+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:42:05.2889845+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:42:05.2895438+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:42:05.3072206+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:42:05.3266719+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:42:05.4632286+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:42:05.4633711+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:42:05.4634171+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:42:05.4837091+02:00 8000000a-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:42:05.5388702+02:00 8000000a-0003-fc00-b63f-84710c7967bb [INF] Request finished in 57.6365ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:42:06.2609952+02:00 8000000b-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:42:06.3484794+02:00 8000000b-0003-fc00-b63f-84710c7967bb [INF] Request finished in 88.1365ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:45:28.4100965+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:45:28.7275187+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:45:28.7527193+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:45:28.7566067+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:45:28.7572833+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:45:28.7754543+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:45:28.7929115+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:45:28.8987785+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:45:28.8988890+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:45:28.8989293+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:45:28.9234550+02:00 80000023-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:45:28.9927086+02:00 80000023-0002-fa00-b63f-84710c7967bb [INF] Request finished in 72.1711ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:45:29.1266416+02:00 80000024-0002-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:45:29.1965643+02:00 80000024-0002-fa00-b63f-84710c7967bb [INF] Request finished in 69.9192ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:45:51.5570098+02:00 80000041-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:45:51.5606660+02:00 80000041-0004-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T13:45:51.6487479+02:00 80000041-0004-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:45:51.6813347+02:00 80000041-0004-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:45:55.0153656+02:00 80000041-0004-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T13:51:06.9525534+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T13:51:07.2928497+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:51:07.3159258+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:51:07.3189957+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T13:51:07.3194927+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T13:51:07.3380765+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T13:51:07.3539065+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T13:51:07.4746670+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T13:51:07.4747937+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T13:51:07.4748412+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T13:51:07.4965058+02:00 8000002d-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T13:51:07.5536095+02:00 8000002d-0001-fd00-b63f-84710c7967bb [INF] Request finished in 59.7006ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T13:51:07.6897667+02:00 8000002e-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T13:51:07.7640673+02:00 8000002e-0001-fd00-b63f-84710c7967bb [INF] Request finished in 74.2813ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T13:51:15.2010230+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Form/GetActiveForm/1   (ca22a1cb)
+2020-02-18T13:51:15.2054519+02:00 80000018-0004-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T13:51:15.2898139+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-18T13:51:15.3240265+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T13:51:20.2788547+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("166"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType], [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[IsActive], [f0].[IsRelated], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId]
+FROM [Forms] AS [f]
+LEFT JOIN [FormFileds] AS [f0] ON [f].[Id] = [f0].[FormId]
+ORDER BY [f].[Id], [f0].[Id]" (0723d8ff)
+2020-02-18T13:52:24.1814154+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("101"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[IsActive], [t].[IsRelated], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[IsActive0], [t].[IsRelated0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[IsActive], [f0].[IsRelated], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[IsActive] AS [IsActive0], [f1].[IsRelated] AS [IsRelated0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-18T13:55:06.1135106+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T13:55:06.1673025+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 230837.0829ms (afa2e885)
+2020-02-18T13:55:06.1674542+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T13:55:06.4248694+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/api/Form/GetActiveForm/1   Responded with [200] in 231214ms (e8e1c063)
+2020-02-18T13:55:06.4275692+02:00 80000018-0004-fb00-b63f-84710c7967bb [INF] Request finished in 231227.7125ms 200 application/json (791a596a)
+2020-02-18T16:48:06.2923085+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T16:48:07.8244413+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T16:48:08.2327411+02:00  [INF] Executed DbCommand ("394"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T16:48:08.2384167+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T16:48:08.2391024+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T16:48:08.3060511+02:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T16:48:08.3650521+02:00  [INF] Applying migration '"20200218112800_Add_Request"'. (0e2ac64d)
+2020-02-18T16:48:09.0491316+02:00  [INF] Executed DbCommand ("622"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Requests] (
+    [Id] int NOT NULL IDENTITY,
+    [CreateDate] datetime2 NOT NULL,
+    [FormId] int NULL,
+    [UserId] int NOT NULL,
+    [IsApproved] bit NULL,
+    CONSTRAINT [PK_Requests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Requests_Forms_FormId] FOREIGN KEY ([FormId]) REFERENCES [Forms] ([Id]) ON DELETE NO ACTION
+);" (0723d8ff)
+2020-02-18T16:48:09.0523746+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [RequestDetails] (
+    [Id] int NOT NULL IDENTITY,
+    [RequestId] int NOT NULL,
+    [FormFieldId] int NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_RequestDetails] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RequestDetails_FormFileds_FormFieldId] FOREIGN KEY ([FormFieldId]) REFERENCES [FormFileds] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_RequestDetails_Requests_RequestId] FOREIGN KEY ([RequestId]) REFERENCES [Requests] ([Id]) ON DELETE CASCADE
+);" (0723d8ff)
+2020-02-18T16:48:09.0532816+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_RequestDetails_FormFieldId] ON [RequestDetails] ([FormFieldId]);" (0723d8ff)
+2020-02-18T16:48:09.1399621+02:00  [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_RequestDetails_RequestId] ON [RequestDetails] ([RequestId]);" (0723d8ff)
+2020-02-18T16:48:09.1429905+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX [IX_Requests_FormId] ON [Requests] ([FormId]);" (0723d8ff)
+2020-02-18T16:48:09.1486117+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200218112800_Add_Request', N'3.1.0');" (0723d8ff)
+2020-02-18T16:48:09.3036527+02:00  [INF] Applying migration '"20200218144712_test"'. (0e2ac64d)
+2020-02-18T16:48:09.9189277+02:00  [INF] Executed DbCommand ("603"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[FormFileds]') AND [c].[name] = N'IsRelated');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [FormFileds] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [FormFileds] DROP COLUMN [IsRelated];" (0723d8ff)
+2020-02-18T16:48:09.9859505+02:00  [INF] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[FiledOptions]') AND [c].[name] = N'IsRelated');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [FiledOptions] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [FiledOptions] DROP COLUMN [IsRelated];" (0723d8ff)
+2020-02-18T16:48:10.0089933+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Forms] ADD [RequestType] int NOT NULL DEFAULT 0;" (0723d8ff)
+2020-02-18T16:48:10.0107710+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [FormFileds] ADD [HasChild] bit NOT NULL DEFAULT CAST(0 AS bit);" (0723d8ff)
+2020-02-18T16:48:10.0119020+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [FormFileds] ADD [HasParent] bit NOT NULL DEFAULT CAST(0 AS bit);" (0723d8ff)
+2020-02-18T16:48:10.0528561+02:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [FiledOptions] ADD [HasChild] bit NOT NULL DEFAULT CAST(0 AS bit);" (0723d8ff)
+2020-02-18T16:48:10.0977824+02:00  [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [FiledOptions] ADD [HasParent] bit NOT NULL DEFAULT CAST(0 AS bit);" (0723d8ff)
+2020-02-18T16:48:10.0990622+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20200218144712_test', N'3.1.0');" (0723d8ff)
+2020-02-18T16:48:11.3952333+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T16:48:11.3955562+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T16:48:11.3956280+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T16:48:11.6970807+02:00 8000001c-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T16:48:12.0475784+02:00 8000001c-0004-fb00-b63f-84710c7967bb [INF] Request finished in 358.0907ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T16:48:14.0965623+02:00 8000001d-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T16:48:14.5265618+02:00 8000001d-0004-fb00-b63f-84710c7967bb [INF] Request finished in 429.8304ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T16:51:15.9853289+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Form/ActivateForm/1  0 (ca22a1cb)
+2020-02-18T16:51:16.0434120+02:00 8000002a-0000-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T16:51:16.0607665+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T16:51:18.1260416+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T16:51:18.4939883+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"ActivateForm\", controller = \"Form\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] ActivateForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T16:51:20.2816854+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("516"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]
+WHERE [f].[Id] = @__p_0" (0723d8ff)
+2020-02-18T16:51:20.5024865+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T16:51:21.9479014+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executing JsonResult, writing value of type '"System.String"'. (2f513669)
+2020-02-18T16:51:22.0884582+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)" in 3583.7426ms (afa2e885)
+2020-02-18T16:51:22.0886396+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T16:51:22.9313708+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/api/Form/ActivateForm/1   Responded with [403] in 6857ms (ada3692a)
+2020-02-18T16:51:22.9582872+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request finished in 6973.4725ms 403 application/json (791a596a)
+2020-02-18T16:51:50.2288009+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Form/DeActivateForm/1  0 (ca22a1cb)
+2020-02-18T16:51:50.2298105+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T16:51:50.2484446+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T16:51:50.2538533+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"DeActivateForm\", controller = \"Form\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] DeActivateForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T16:51:50.2822241+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]
+WHERE [f].[Id] = @__p_0" (0723d8ff)
+2020-02-18T16:51:50.3537660+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T16:51:50.4121293+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)" in 158.1216ms (afa2e885)
+2020-02-18T16:51:50.4121992+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T16:51:50.7441547+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/api/Form/DeActivateForm/1   Responded with [200] in 509ms (ab77affb)
+2020-02-18T16:51:50.7457289+02:00 80000028-0006-fc00-b63f-84710c7967bb [INF] Request finished in 517.151ms 200 application/json (791a596a)
+2020-02-18T16:53:22.7120881+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Form/DeActivateForm/2  0 (ca22a1cb)
+2020-02-18T16:53:22.7132122+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T16:53:22.7388755+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T16:53:22.7395436+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"DeActivateForm\", controller = \"Form\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] DeActivateForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T16:53:22.7535044+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]
+WHERE [f].[Id] = @__p_0" (0723d8ff)
+2020-02-18T16:53:23.2947519+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("342"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Forms] SET [IsActive] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-18T16:53:23.3485880+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T16:53:23.3504112+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)" in 610.6364ms (afa2e885)
+2020-02-18T16:53:23.3512785+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.DeActivateForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T16:53:23.3541679+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/api/Form/DeActivateForm/2   Responded with [200] in 640ms (56aba7d9)
+2020-02-18T16:53:23.3568429+02:00 80000030-0003-fd00-b63f-84710c7967bb [INF] Request finished in 645.0082ms 200 application/json (791a596a)
+2020-02-18T16:54:29.3565457+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Form/ActivateForm/2  0 (ca22a1cb)
+2020-02-18T16:54:29.3578242+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T16:54:29.3594391+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T16:54:29.3599898+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"ActivateForm\", controller = \"Form\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] ActivateForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T16:54:29.3657141+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]
+WHERE [f].[Id] = @__p_0" (0723d8ff)
+2020-02-18T16:54:29.3678361+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-18T16:54:29.5227449+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("152"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Forms] SET [IsActive] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-18T16:54:29.5367481+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-18T16:54:29.5376179+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)" in 177.3957ms (afa2e885)
+2020-02-18T16:54:29.5377604+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.ActivateForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T16:54:29.5404948+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Request: PUT http localhost:5000/api/Form/ActivateForm/2   Responded with [200] in 182ms (c083980f)
+2020-02-18T16:54:29.5412147+02:00 80000030-0001-fd00-b63f-84710c7967bb [INF] Request finished in 185.1883ms 200 application/json (791a596a)
+2020-02-18T17:14:02.0927458+02:00 80000011-0000-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T17:14:02.0939942+02:00 80000011-0000-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:14:02.0975754+02:00 80000011-0000-fe00-b63f-84710c7967bb [INF] Request finished in 5.0991ms 204  (791a596a)
+2020-02-18T17:14:02.1299180+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 602 (ca22a1cb)
+2020-02-18T17:14:02.1304790+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:14:02.1603272+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T17:14:02.1635284+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T17:14:02.3445644+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T17:14:02.3464737+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 182.8465ms (afa2e885)
+2020-02-18T17:14:02.3465126+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T17:14:02.3472648+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adsada","nameEn":"fgfg","descr":"asasa","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":"3","nameAr":"t","nameEn":"e33ree","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":"3","nameAr":"t","nameEn":"e33ree","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":"3","nameAr":"t","nameEn":"e33ree","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [400] in 216ms (c04375a5)
+2020-02-18T17:14:02.3476606+02:00 80000012-0000-fe00-b63f-84710c7967bb [INF] Request finished in 217.8761ms 400 application/json (791a596a)
+2020-02-18T17:16:50.5750145+02:00 8000003e-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T17:16:50.5758313+02:00 8000003e-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:16:50.5765273+02:00 8000003e-0006-fc00-b63f-84710c7967bb [INF] Request finished in 1.5699ms 204  (791a596a)
+2020-02-18T17:16:50.5976635+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 608 (ca22a1cb)
+2020-02-18T17:16:50.5978319+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:16:50.5987537+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T17:16:50.5991060+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T17:16:50.7357118+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 136.493ms (afa2e885)
+2020-02-18T17:16:50.7357592+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T17:16:50.7445771+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adsada","nameEn":"fgfg","descr":"asasa","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [200] in 146ms (85298e6d)
+2020-02-18T17:16:50.7456004+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Request finished in 148.0174ms 200 application/json (791a596a)
+2020-02-18T17:16:50.8884192+02:00 80000043-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("139"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [RequestType], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:16:51.0069132+02:00 80000043-0005-fe00-b63f-84710c7967bb [ERR] An error occurred using a transaction. (2ffd8ddb)
+2020-02-18T17:24:10.8862366+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T17:24:12.1978970+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T17:24:12.2847814+02:00  [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T17:24:12.2890765+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T17:24:12.2899763+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T17:24:12.3967342+02:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T17:24:12.4780982+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T17:24:13.0676035+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T17:24:13.0678058+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T17:24:13.0678662+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T17:24:13.2049792+02:00 80000043-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T17:24:13.4932590+02:00 80000043-0004-fc00-b63f-84710c7967bb [INF] Request finished in 292.6589ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T17:24:15.0635694+02:00 80000044-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T17:24:15.2624702+02:00 80000044-0004-fc00-b63f-84710c7967bb [INF] Request finished in 199.9688ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T17:24:17.1396574+02:00 8000004b-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T17:24:17.1445877+02:00 8000004b-0001-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T17:24:17.1472510+02:00 8000004b-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:24:17.1513552+02:00 8000004b-0001-ff00-b63f-84710c7967bb [INF] Request finished in 11.9709ms 204  (791a596a)
+2020-02-18T17:24:17.1760429+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 1668 (ca22a1cb)
+2020-02-18T17:24:17.1788502+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:24:17.6584404+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T17:24:17.7730078+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T17:24:18.3725688+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 588.3388ms (afa2e885)
+2020-02-18T17:24:18.3729793+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T17:24:18.3757035+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("130"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [RequestType], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:24:18.8016036+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:18.9893797+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("394"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FormFileds] ([CreateDate], [FiledType], [FormId], [HasChild], [HasParent], [IsActive], [IsRequired], [NameAr], [NameEn], [Order], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [FormFileds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:24:18.9938126+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.0753854+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.1407046+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.1994652+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.2733597+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.3387301+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+2020-02-18T17:24:19.3994070+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+2020-02-18T17:24:19.4586556+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.5437252+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:24:19.6747512+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("611"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-02-18T17:24:19.8633663+02:00 8000004c-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_FiledOptions_FormFileds_FormFiledId\". The conflict occurred in database \"BiddingEngin\", table \"dbo.FormFileds\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6f5e75cb-b3ff-4e94-9c6b-df660bc5f851
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_FiledOptions_FormFileds_FormFiledId". The conflict occurred in database "BiddingEngin", table "dbo.FormFileds", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6f5e75cb-b3ff-4e94-9c6b-df660bc5f851
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BiddingEngineAPI.EFCore.DAL.EFUnitOfWork.CommitAsync() in D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI.EFCore\DAL\EFUnitOfWork.cs:line 66
+2020-02-18T17:24:20.0619349+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adsada","nameEn":"fgfg","descr":"asasa","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [200] in 2872ms (f129b1d8)
+2020-02-18T17:24:20.0987333+02:00 8000004c-0001-ff00-b63f-84710c7967bb [INF] Request finished in 2922.9383ms 200 application/json (791a596a)
+2020-02-18T17:25:07.4512861+02:00 8000004d-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T17:25:07.4533136+02:00 8000004d-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:25:07.4544434+02:00 8000004d-0001-ff00-b63f-84710c7967bb [INF] Request finished in 3.3337ms 204  (791a596a)
+2020-02-18T17:25:07.4592380+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 2198 (ca22a1cb)
+2020-02-18T17:25:07.4604173+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:25:07.4693027+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T17:25:07.4714049+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T17:25:25.9016805+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [RequestType], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:25:26.0253782+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 18552.7937ms (afa2e885)
+2020-02-18T17:25:26.0274814+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T17:25:26.0810311+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"adsada","nameEn":"fgfg","descr":"asasa","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1},{"filedIndex":0,"nameAr":"adasa","nameEn":"sdsd","isRequried":false,"filedType":7,"isRelated":false,"order":1,"filedOptions":[{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0},{"optionIndex":3,"nameAr":"ytr","nameEn":"654ytrew","isActive":true,"isRelated":"1","relatedFiledIndex":0,"parentOptionIndex":0}],"FiledIndex":1}]} Responded with [200] in 18613ms (b13b9a4b)
+2020-02-18T17:25:26.0924500+02:00 8000004e-0001-ff00-b63f-84710c7967bb [INF] Request finished in 18632.549ms 200 application/json (791a596a)
+2020-02-18T17:26:41.7538180+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T17:26:42.3089515+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T17:26:42.3348593+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T17:26:42.3382916+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T17:26:42.3390268+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T17:26:42.3565867+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T17:26:42.3770938+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T17:26:42.6307685+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T17:26:42.6310905+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T17:26:42.6311369+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T17:26:42.6750131+02:00 80000079-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T17:26:42.7517622+02:00 80000079-0007-ff00-b63f-84710c7967bb [INF] Request finished in 81.3454ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T17:26:42.9558849+02:00 8000007a-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T17:26:43.0436976+02:00 8000007a-0007-ff00-b63f-84710c7967bb [INF] Request finished in 88.1615ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T17:26:50.9751657+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Form/CreateNewForm application/json 389 (ca22a1cb)
+2020-02-18T17:26:50.9808167+02:00 80000040-0006-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T17:26:50.9832330+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T17:26:51.1496774+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T17:26:51.2107059+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T17:26:53.5590640+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("50"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [RequestType], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:26:53.5691358+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 2352.2043ms (afa2e885)
+2020-02-18T17:26:53.5696628+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T17:26:53.7900946+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("24"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FormFileds] ([CreateDate], [FiledType], [FormId], [HasChild], [HasParent], [IsActive], [IsRequired], [NameAr], [NameEn], [Order], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [FormFileds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-18T17:26:53.9243327+02:00 80000040-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: The property 'Id' on entity type 'FormField' has a temporary value while attempting to change the entity's state to 'Unchanged'. Either set a permanent value explicitly or ensure that the database is configured to generate values for this property.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.AcceptChanges()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.AcceptAllChanges(IReadOnlyList`1 changedEntries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: The property 'Id' on entity type 'FormField' has a temporary value while attempting to change the entity's state to 'Unchanged'. Either set a permanent value explicitly or ensure that the database is configured to generate values for this property.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.AcceptChanges()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.AcceptAllChanges(IReadOnlyList`1 changedEntries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:26:53.9268389+02:00 80000040-0006-fc00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"BiddingEngineAPI.EFCore.DatabaseContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-02-18T17:26:54.1974585+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/api/Form/CreateNewForm  {"nameAr":"string","nameEn":"string","descr":"string","requestType":0,"fileds":[{"nameAr":"string","nameEn":"string","filedIndex":0,"isActive":true,"hasParent":true,"isRequried":true,"hasChild":true,"order":0,"filedType":0,"filedOptions":[{"nameAr":"string","nameEn":"string","optionIndex":0,"isActive":true,"hasParent":true,"hasChild":true,"relatedFiledIndex":0,"parentOptionIndex":0}]}]} Responded with [200] in 3208ms (65b9b754)
+2020-02-18T17:26:54.2020437+02:00 80000040-0006-fc00-b63f-84710c7967bb [INF] Request finished in 3227.3955ms 200 application/json (791a596a)
+2020-02-18T23:16:48.3319899+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-18T23:16:50.8326852+02:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T23:16:50.9364808+02:00  [INF] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T23:16:50.9463345+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-18T23:16:50.9481231+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-18T23:16:51.0024071+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-18T23:16:51.0608129+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-18T23:16:51.9757566+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T23:16:51.9764193+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T23:16:51.9767310+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-18T23:16:52.2198394+02:00 80000037-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-18T23:16:52.4381300+02:00 80000037-0004-fb00-b63f-84710c7967bb [INF] Request finished in 223.3757ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-18T23:16:52.8359563+02:00 80000038-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-18T23:16:53.0454828+02:00 80000038-0004-fb00-b63f-84710c7967bb [INF] Request finished in 212.9294ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-18T23:46:48.4227149+02:00 80000034-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:46:48.4346424+02:00 80000034-0000-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-18T23:46:48.4399522+02:00 80000034-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:46:48.4479840+02:00 80000034-0000-fd00-b63f-84710c7967bb [INF] Request finished in 26.6567ms 204  (791a596a)
+2020-02-18T23:46:48.4704256+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 198 (ca22a1cb)
+2020-02-18T23:46:48.4742611+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:46:49.7614981+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:46:49.8591161+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:46:50.0317505+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:46:50.0746291+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 198.5813ms (afa2e885)
+2020-02-18T23:46:50.0754467+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:46:50.8034639+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 2311ms (060fbd7f)
+2020-02-18T23:46:50.8629918+02:00 80000035-0000-fd00-b63f-84710c7967bb [INF] Request finished in 2393.2933ms 400 application/json (791a596a)
+2020-02-18T23:47:14.1207586+02:00 80000036-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:47:14.1230666+02:00 80000036-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:14.1274188+02:00 80000036-0000-fd00-b63f-84710c7967bb [INF] Request finished in 6.5926ms 204  (791a596a)
+2020-02-18T23:47:14.1355864+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 198 (ca22a1cb)
+2020-02-18T23:47:14.1444480+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:14.1554053+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:47:14.1571864+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:47:14.2209636+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:47:14.2230249+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 64.6253ms (afa2e885)
+2020-02-18T23:47:14.2235800+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:47:14.2289836+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 82ms (5b818801)
+2020-02-18T23:47:14.2360652+02:00 80000037-0000-fd00-b63f-84710c7967bb [INF] Request finished in 103.654ms 400 application/json (791a596a)
+2020-02-18T23:47:21.3363888+02:00 80000038-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:47:21.3376393+02:00 80000038-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:21.3393625+02:00 80000038-0000-fd00-b63f-84710c7967bb [INF] Request finished in 2.9417ms 204  (791a596a)
+2020-02-18T23:47:21.3437918+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 198 (ca22a1cb)
+2020-02-18T23:47:21.3440050+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:21.4040672+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:47:21.4072283+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:47:21.4452427+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:47:21.4523592+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 42.5604ms (afa2e885)
+2020-02-18T23:47:21.4533340+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:47:21.4608526+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 115ms (34e81672)
+2020-02-18T23:47:21.4640210+02:00 80000039-0000-fd00-b63f-84710c7967bb [INF] Request finished in 119.8889ms 400 application/json (791a596a)
+2020-02-18T23:47:28.4474587+02:00 8000003a-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:47:28.4485836+02:00 8000003a-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:28.4510536+02:00 8000003a-0000-fd00-b63f-84710c7967bb [INF] Request finished in 3.6947ms 204  (791a596a)
+2020-02-18T23:47:28.4604454+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 337 (ca22a1cb)
+2020-02-18T23:47:28.4638664+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:47:28.4675034+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:47:28.4689124+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:47:28.4786610+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:47:28.4808765+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 11.2142ms (afa2e885)
+2020-02-18T23:47:28.4810056+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:47:28.4852782+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"ffff","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1},{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 20ms (57b9a0eb)
+2020-02-18T23:47:28.4864705+02:00 8000003b-0000-fd00-b63f-84710c7967bb [INF] Request finished in 26.5592ms 400 application/json (791a596a)
+2020-02-18T23:48:04.0748295+02:00 8000003c-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:48:04.0865692+02:00 8000003c-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:48:04.0885351+02:00 8000003c-0000-fd00-b63f-84710c7967bb [INF] Request finished in 15.5207ms 204  (791a596a)
+2020-02-18T23:48:04.0947142+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 198 (ca22a1cb)
+2020-02-18T23:48:04.1056657+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:48:04.1095687+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:48:04.1127955+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:48:04.1222006+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:48:04.1242815+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 9.8811ms (afa2e885)
+2020-02-18T23:48:04.1249055+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:48:04.1362582+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 26ms (d5923703)
+2020-02-18T23:48:04.1375616+02:00 8000003d-0000-fd00-b63f-84710c7967bb [INF] Request finished in 44.8522ms 400 application/json (791a596a)
+2020-02-18T23:48:08.2912838+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 338 (ca22a1cb)
+2020-02-18T23:48:08.2918782+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:48:08.2946838+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:48:08.2960375+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:48:08.3086890+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:48:08.3108493+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 13.543ms (afa2e885)
+2020-02-18T23:48:08.3112071+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:48:08.3154077+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"fcds","nameEn":"w","descr":"","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1},{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 22ms (23aed6e7)
+2020-02-18T23:48:08.3169016+02:00 8000003e-0000-fd00-b63f-84710c7967bb [INF] Request finished in 25.7566ms 400 application/json (791a596a)
+2020-02-18T23:48:10.3929254+02:00 8000003f-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-18T23:48:10.3934592+02:00 8000003f-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:48:10.3949526+02:00 8000003f-0000-fd00-b63f-84710c7967bb [INF] Request finished in 2.1638ms 204  (791a596a)
+2020-02-18T23:48:10.3986052+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=UTF-8 476 (ca22a1cb)
+2020-02-18T23:48:10.3989458+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-18T23:48:10.4019310+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-18T23:48:10.4032942+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-18T23:48:10.4093761+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-18T23:48:10.4108000+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 5.9765ms (afa2e885)
+2020-02-18T23:48:10.4112264+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-18T23:48:10.4149458+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"fcds","nameEn":"w","descr":"www","isActive":true,"fileds":[{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1},{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1},{"filedIndex":0,"nameAr":"","nameEn":"","isRequried":false,"filedType":0,"isRelated":false,"order":1,"filedOptions":[],"FiledIndex":1}]} Responded with [400] in 15ms (5964eaef)
+2020-02-18T23:48:10.4160135+02:00 80000040-0000-fd00-b63f-84710c7967bb [INF] Request finished in 17.8257ms 400 application/json (791a596a)

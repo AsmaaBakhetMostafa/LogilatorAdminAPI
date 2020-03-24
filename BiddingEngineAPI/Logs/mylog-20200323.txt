@@ -1,0 +1,206 @@
+2020-03-23T11:34:29.3556654+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-23T11:34:36.2502742+02:00  [INF] Executed DbCommand ("91"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-23T11:34:36.6746719+02:00  [INF] Executed DbCommand ("367"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-23T11:34:36.6812853+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-23T11:34:36.6826837+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-23T11:34:36.9757636+02:00  [INF] Executed DbCommand ("123"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-23T11:34:37.1497336+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-23T11:34:37.4339627+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-23T11:34:38.9568252+02:00  [INF] Executed DbCommand ("131"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-23T11:34:39.0590274+02:00  [INF] Executed DbCommand ("90"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-23T11:34:39.1273608+02:00  [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-23T11:34:44.8091597+02:00 80000036-0001-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-23T11:34:44.8091597+02:00 8000004e-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584956001916   (ca22a1cb)
+2020-03-23T11:34:44.8172267+02:00 8000004e-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T11:34:45.0540145+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584956001916 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T11:34:45.0541019+02:00 8000004e-0004-fa00-b63f-84710c7967bb [INF] Request finished in 248.3339ms 204  (791a596a)
+2020-03-23T11:34:45.0550969+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T11:34:45.1552106+02:00 8000004f-0004-fa00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-23T11:34:46.8008090+02:00 80000036-0001-fc00-b63f-84710c7967bb [INF] Request finished in 1996.5013ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-23T11:34:47.5261205+02:00 8000004c-0004-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-23T11:34:50.0518495+02:00 80000045-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-23T11:34:50.3519399+02:00 80000045-0007-fb00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-23T11:34:50.3522254+02:00 80000045-0007-fb00-b63f-84710c7967bb [INF] Request finished in 301.0554ms 200 image/png (791a596a)
+2020-03-23T11:34:51.1277918+02:00 8000004c-0004-f900-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-23T11:34:51.1287417+02:00 8000004c-0004-f900-b63f-84710c7967bb [INF] Request finished in 3602.7086ms 0 text/css (791a596a)
+2020-03-23T11:34:51.3300269+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T11:34:52.2386581+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T11:34:52.6049122+02:00 80000046-0007-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-23T11:34:53.0753100+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("561"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T11:34:53.1151168+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T11:34:53.1413742+02:00 80000046-0007-fb00-b63f-84710c7967bb [INF] Request finished in 536.4675ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-23T11:34:53.6356143+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 1391.0598ms (afa2e885)
+2020-03-23T11:34:53.6363129+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T11:34:55.0204064+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584956001916  
+                                                     Responded with [200] in 9745ms (09d67af7)
+2020-03-23T11:34:55.0958159+02:00 8000004f-0004-fa00-b63f-84710c7967bb [INF] Request finished in 10041.5277ms 200 application/json (791a596a)
+2020-03-23T11:34:55.0985024+02:00 80000050-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetAllForm?null&_=1584956001917   (ca22a1cb)
+2020-03-23T11:34:55.0989912+02:00 80000050-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T11:34:55.0999018+02:00 80000050-0004-fa00-b63f-84710c7967bb [INF] Request finished in 1.6118ms 204  (791a596a)
+2020-03-23T11:34:55.1033193+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetAllForm?null&_=1584956001917 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T11:34:55.1043865+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T11:34:55.1100432+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (500cc934)
+2020-03-23T11:34:55.1127290+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllForm\", controller = \"Form\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] GetAllForm()" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T11:34:56.5358386+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("751"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[HasPredefined], [t].[Hint], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[PredfinedID], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[HasPredefined], [f0].[Hint], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f0].[PredfinedID], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-03-23T11:34:56.8776015+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.FormViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T11:34:56.8975969+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)" in 1784.7061ms (afa2e885)
+2020-03-23T11:34:56.8976682+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T11:34:56.9052482+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Form/GetAllForm ?null&_=1584956001917  
+                                                     Responded with [200] in 1799ms (f6809b76)
+2020-03-23T11:34:56.9066259+02:00 80000051-0004-fa00-b63f-84710c7967bb [INF] Request finished in 1803.6482ms 200 application/json (791a596a)
+2020-03-23T12:07:26.4017994+02:00 80000052-0004-f800-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958045587   (ca22a1cb)
+2020-03-23T12:07:26.4048006+02:00 80000052-0004-f800-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:07:26.4064756+02:00 80000052-0004-f800-b63f-84710c7967bb [INF] Request finished in 7.9933ms 204  (791a596a)
+2020-03-23T12:07:26.4107765+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958045587 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:07:26.4112306+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:07:26.4755908+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:07:26.4874275+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:07:26.6581670+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:07:26.6589959+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:07:26.6602994+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 171.9805ms (afa2e885)
+2020-03-23T12:07:26.6603721+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:07:26.6620918+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958045587  
+                                                     Responded with [200] in 248ms (b1004850)
+2020-03-23T12:07:26.6625894+02:00 80000027-0002-f700-b63f-84710c7967bb [INF] Request finished in 255.1049ms 200 application/json (791a596a)
+2020-03-23T12:10:18.7965298+02:00 8000005a-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958218714   (ca22a1cb)
+2020-03-23T12:10:18.7970590+02:00 8000005a-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:18.7978958+02:00 8000005a-0007-fc00-b63f-84710c7967bb [INF] Request finished in 1.6016ms 204  (791a596a)
+2020-03-23T12:10:18.8417551+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958218714 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:10:18.8422297+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:18.8453075+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:10:18.8480461+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:10:18.8930070+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:10:18.8936865+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:10:18.8943710+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 46.0103ms (afa2e885)
+2020-03-23T12:10:18.8944295+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:10:18.8967593+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958218714  
+                                                     Responded with [200] in 53ms (90c21cd8)
+2020-03-23T12:10:18.8971700+02:00 8000002b-0005-f600-b63f-84710c7967bb [INF] Request finished in 55.7642ms 200 application/json (791a596a)
+2020-03-23T12:10:38.6354753+02:00 800000be-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958238572   (ca22a1cb)
+2020-03-23T12:10:38.6357849+02:00 800000be-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:38.6369429+02:00 800000be-0006-fd00-b63f-84710c7967bb [INF] Request finished in 1.3187ms 204  (791a596a)
+2020-03-23T12:10:38.6384327+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958238572 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:10:38.6384956+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:38.6395134+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:10:38.6400221+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:10:38.6642921+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:10:38.6649033+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:10:38.6659436+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 25.7131ms (afa2e885)
+2020-03-23T12:10:38.6660347+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:10:38.6671866+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958238572  
+                                                     Responded with [200] in 28ms (62791f6a)
+2020-03-23T12:10:38.6675366+02:00 8000002d-0005-f600-b63f-84710c7967bb [INF] Request finished in 29.0926ms 200 application/json (791a596a)
+2020-03-23T12:10:42.6358479+02:00 8000005e-0004-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958242564   (ca22a1cb)
+2020-03-23T12:10:42.6368013+02:00 8000005e-0004-f900-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:42.6379851+02:00 8000005e-0004-f900-b63f-84710c7967bb [INF] Request finished in 2.4771ms 204  (791a596a)
+2020-03-23T12:10:42.6419438+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958242564 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:10:42.6422857+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:42.6440154+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:10:42.6449118+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:10:42.6626268+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:10:42.6643708+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:10:42.6657618+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 20.6352ms (afa2e885)
+2020-03-23T12:10:42.6659140+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:10:42.6703302+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958242564  
+                                                     Responded with [200] in 26ms (d405b3da)
+2020-03-23T12:10:42.6724942+02:00 800000bb-0003-ff00-b63f-84710c7967bb [INF] Request finished in 30.462ms 200 application/json (791a596a)
+2020-03-23T12:10:49.0162896+02:00 80000077-0006-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958248955   (ca22a1cb)
+2020-03-23T12:10:49.0165907+02:00 80000077-0006-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:49.0171712+02:00 80000077-0006-fb00-b63f-84710c7967bb [INF] Request finished in 1.0284ms 204  (791a596a)
+2020-03-23T12:10:49.0180887+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958248955 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:10:49.0181465+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:10:49.0189683+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:10:49.0194103+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:10:49.0258228+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:10:49.0272568+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:10:49.0280758+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 8.5261ms (afa2e885)
+2020-03-23T12:10:49.0281308+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:10:49.0307608+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958248955  
+                                                     Responded with [200] in 11ms (1f195c3f)
+2020-03-23T12:10:49.0315338+02:00 80000088-0006-fc00-b63f-84710c7967bb [INF] Request finished in 13.4407ms 200 application/json (791a596a)
+2020-03-23T12:11:07.1062312+02:00 8000004e-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958267044   (ca22a1cb)
+2020-03-23T12:11:07.1064249+02:00 8000004e-0000-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:11:07.1069672+02:00 8000004e-0000-ff00-b63f-84710c7967bb [INF] Request finished in 0.7811ms 204  (791a596a)
+2020-03-23T12:11:07.1078860+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958267044 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:11:07.1080598+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:11:07.1090238+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:11:07.1095018+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:11:07.1139146+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:11:07.1148356+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:11:07.1157614+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 5.9976ms (afa2e885)
+2020-03-23T12:11:07.1158796+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:11:07.1177127+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958267044  
+                                                     Responded with [200] in 9ms (c871eb11)
+2020-03-23T12:11:07.1186210+02:00 8000003f-0002-ff00-b63f-84710c7967bb [INF] Request finished in 10.4289ms 200 application/json (791a596a)
+2020-03-23T12:11:10.0134099+02:00 800000b4-0002-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/RequestTypes?null&_=1584958269943   (ca22a1cb)
+2020-03-23T12:11:10.0136510+02:00 800000b4-0002-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:11:10.0144511+02:00 800000b4-0002-fb00-b63f-84710c7967bb [INF] Request finished in 0.8846ms 204  (791a596a)
+2020-03-23T12:11:10.0157560+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/RequestTypes?null&_=1584958269943 application/json; charset=utf-8  (ca22a1cb)
+2020-03-23T12:11:10.0158868+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-23T12:11:10.0169052+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (500cc934)
+2020-03-23T12:11:10.0174073+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"RequestTypes\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.RequestTypeModel] Get()" on controller "BiddingEngineAPI.Controllers.RequestTypesController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-23T12:11:10.0381773+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[RequestType_Id], [r].[RequestType_Name]
+FROM [RequestTypes] AS [r]" (0723d8ff)
+2020-03-23T12:11:10.0397846+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.RequestTypeModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-23T12:11:10.0410280+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)" in 23.4704ms (afa2e885)
+2020-03-23T12:11:10.0411364+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestTypesController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-03-23T12:11:10.0476854+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/RequestTypes ?null&_=1584958269943  
+                                                     Responded with [200] in 31ms (c2c9941f)
+2020-03-23T12:11:10.0481743+02:00 80000050-0000-ff00-b63f-84710c7967bb [INF] Request finished in 32.459ms 200 application/json (791a596a)

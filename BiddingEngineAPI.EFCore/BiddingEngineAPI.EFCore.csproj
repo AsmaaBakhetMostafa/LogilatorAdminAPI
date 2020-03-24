@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200218112002_Add_Request.cs" />
+    <Compile Remove="Migrations\20200218112002_Add_Request.Designer.cs" />
+
+    <Compile Remove="Migrations\20200218154642_order2.cs" />
+    <Compile Remove="Migrations\20200218154642_order2.Designer.cs" />
+    <Compile Remove="Migrations\20200223115944_Add requestStatus.cs" />
+    <Compile Remove="Migrations\20200223115944_Add requestStatus.Designer.cs" />
+    <Compile Remove="Migrations\20200302160834_Add_UserType.cs" />
+    <Compile Remove="Migrations\20200302160834_Add_UserType.Designer.cs" />
+
+    <Compile Remove="Model\Client.cs" />
+    <Compile Remove="Model\ServiceProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="3.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

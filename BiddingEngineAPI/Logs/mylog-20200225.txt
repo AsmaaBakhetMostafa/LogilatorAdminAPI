@@ -1,0 +1,487 @@
+2020-02-25T00:19:02.0583039+02:00 8000008b-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582582741922   (ca22a1cb)
+2020-02-25T00:19:02.0627399+02:00 8000008b-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:19:02.0632824+02:00 8000008b-0007-fc00-b63f-84710c7967bb [INF] Request finished in 5.09ms 204  (791a596a)
+2020-02-25T00:19:02.0656561+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582582741922 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:19:02.0659201+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:19:02.0892014+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:19:02.0904467+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:19:02.1422345+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:19:02.2278970+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:19:02.2288236+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 138.2341ms (afa2e885)
+2020-02-25T00:19:02.2289069+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:19:02.2335552+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582582741922  Responded with [200] in 164ms (405a912e)
+2020-02-25T00:19:02.2338167+02:00 80000032-0007-fe00-b63f-84710c7967bb [INF] Request finished in 168.1791ms 200 application/json (791a596a)
+2020-02-25T00:20:29.9991224+02:00 80000033-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582582829976   (ca22a1cb)
+2020-02-25T00:20:29.9992292+02:00 80000033-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:20:30.0054196+02:00 80000033-0007-fe00-b63f-84710c7967bb [INF] Request finished in 0.3877ms 204  (791a596a)
+2020-02-25T00:20:30.0372509+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582582829976 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:20:30.0373702+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:20:30.0375956+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:20:30.0377286+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:20:30.0448150+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:20:30.0465974+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:20:30.0469353+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 9.1535ms (afa2e885)
+2020-02-25T00:20:30.0469994+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:20:30.0482838+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582582829976  Responded with [200] in 10ms (2db20530)
+2020-02-25T00:20:30.0484440+02:00 80000034-0007-fe00-b63f-84710c7967bb [INF] Request finished in 11.3727ms 200 application/json (791a596a)
+2020-02-25T00:24:02.1974723+02:00 80000016-0005-f700-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583042165   (ca22a1cb)
+2020-02-25T00:24:02.1976904+02:00 80000016-0005-f700-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:02.2054660+02:00 80000016-0005-f700-b63f-84710c7967bb [INF] Request finished in 7.814ms 204  (791a596a)
+2020-02-25T00:24:02.2059874+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583042165 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:24:02.2068478+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:02.2429555+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:24:02.2431383+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:24:02.2623289+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:24:02.2663656+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:24:02.2668149+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 23.6205ms (afa2e885)
+2020-02-25T00:24:02.2668630+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:24:02.2680402+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583042165  Responded with [200] in 61ms (f85d3a6c)
+2020-02-25T00:24:02.2681844+02:00 8000002b-0003-fc00-b63f-84710c7967bb [INF] Request finished in 62.2789ms 200 application/json (791a596a)
+2020-02-25T00:24:29.4878823+02:00 8000002c-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583069454   (ca22a1cb)
+2020-02-25T00:24:29.4882009+02:00 8000002c-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:29.4886428+02:00 8000002c-0003-fc00-b63f-84710c7967bb [INF] Request finished in 0.8473ms 204  (791a596a)
+2020-02-25T00:24:29.5086844+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583069454 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:24:29.5087686+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:29.5091383+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:24:29.5092443+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:24:29.5109675+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:24:29.5127428+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:24:29.5131109+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 3.8273ms (afa2e885)
+2020-02-25T00:24:29.5131390+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:24:29.5302662+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583069454  Responded with [200] in 21ms (1f6bfc8a)
+2020-02-25T00:24:29.5304231+02:00 8000002d-0003-fc00-b63f-84710c7967bb [INF] Request finished in 21.7857ms 200 application/json (791a596a)
+2020-02-25T00:24:46.9268466+02:00 8000002e-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583080029   (ca22a1cb)
+2020-02-25T00:24:46.9269262+02:00 8000002e-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:46.9270867+02:00 8000002e-0003-fc00-b63f-84710c7967bb [INF] Request finished in 0.2591ms 204  (791a596a)
+2020-02-25T00:24:46.9426791+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583080029 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:24:46.9427574+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:46.9428801+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:24:46.9429596+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:24:46.9512767+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:24:46.9526996+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:24:46.9530702+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 10.0645ms (afa2e885)
+2020-02-25T00:24:46.9531103+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:24:46.9539015+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583080029  Responded with [200] in 11ms (a0c94017)
+2020-02-25T00:24:46.9540862+02:00 8000002f-0003-fc00-b63f-84710c7967bb [INF] Request finished in 11.4317ms 200 application/json (791a596a)
+2020-02-25T00:24:55.2554154+02:00 80000030-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583095236   (ca22a1cb)
+2020-02-25T00:24:55.2555117+02:00 80000030-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:55.2556789+02:00 80000030-0003-fc00-b63f-84710c7967bb [INF] Request finished in 0.2779ms 204  (791a596a)
+2020-02-25T00:24:55.2706774+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583095236 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:24:55.2708116+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:24:55.2709117+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:24:55.2711157+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:24:55.2850178+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:24:55.2868276+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:24:55.2869988+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 15.845ms (afa2e885)
+2020-02-25T00:24:55.2870212+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:24:55.2882774+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583095236  Responded with [200] in 17ms (5c02701e)
+2020-02-25T00:24:55.2883472+02:00 80000031-0003-fc00-b63f-84710c7967bb [INF] Request finished in 17.7091ms 200 application/json (791a596a)
+2020-02-25T00:32:54.3625461+02:00 80000069-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583574331   (ca22a1cb)
+2020-02-25T00:32:54.3628093+02:00 80000069-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:32:54.3699412+02:00 80000069-0000-fb00-b63f-84710c7967bb [INF] Request finished in 7.4643ms 204  (791a596a)
+2020-02-25T00:32:54.3703656+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583574331 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:32:54.3704590+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:32:54.3849830+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:32:54.3851544+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:32:54.4012153+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:32:54.4049570+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:32:54.4051021+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 19.9087ms (afa2e885)
+2020-02-25T00:32:54.4051315+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:32:54.4249534+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583574331  Responded with [200] in 54ms (ddba3a96)
+2020-02-25T00:32:54.4251551+02:00 80000018-0005-f600-b63f-84710c7967bb [INF] Request finished in 54.9119ms 200 application/json (791a596a)
+2020-02-25T00:33:34.5191349+02:00 8000006b-0000-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583614483   (ca22a1cb)
+2020-02-25T00:33:34.5192278+02:00 8000006b-0000-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:33:34.5194373+02:00 8000006b-0000-fb00-b63f-84710c7967bb [INF] Request finished in 0.3499ms 204  (791a596a)
+2020-02-25T00:33:34.5260374+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583614483 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:33:34.5261488+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:33:34.5262848+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:33:34.5263714+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:33:34.5345783+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:33:34.5356044+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:33:34.5357403+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 9.3273ms (afa2e885)
+2020-02-25T00:33:34.5357653+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:33:34.5373339+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583614483  Responded with [200] in 11ms (6b9f288b)
+2020-02-25T00:33:34.5375924+02:00 80000033-0003-fc00-b63f-84710c7967bb [INF] Request finished in 11.5512ms 200 application/json (791a596a)
+2020-02-25T00:34:17.0344029+02:00 8000009e-0002-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583656990   (ca22a1cb)
+2020-02-25T00:34:17.0345588+02:00 8000009e-0002-f900-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:34:17.0392673+02:00 8000009e-0002-f900-b63f-84710c7967bb [INF] Request finished in 0.5094ms 204  (791a596a)
+2020-02-25T00:34:17.0395567+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583656990 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:34:17.0396438+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:34:17.0397992+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:34:17.0399015+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:34:17.0497069+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:34:17.0508549+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:34:17.0509703+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 11.0336ms (afa2e885)
+2020-02-25T00:34:17.0510243+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:34:17.0519094+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583656990  Responded with [200] in 12ms (ae9be15b)
+2020-02-25T00:34:17.0520558+02:00 8000003e-0007-fe00-b63f-84710c7967bb [INF] Request finished in 12.5889ms 200 application/json (791a596a)
+2020-02-25T00:36:02.5509661+02:00 8000003f-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583762476   (ca22a1cb)
+2020-02-25T00:36:02.5540124+02:00 8000003f-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:02.5543064+02:00 8000003f-0007-fe00-b63f-84710c7967bb [INF] Request finished in 3.4738ms 204  (791a596a)
+2020-02-25T00:36:02.5562432+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583762476 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:36:02.5563264+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:02.5564874+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:36:02.5566534+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:36:02.5686008+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:36:02.5697675+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:36:02.5698923+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 13.1945ms (afa2e885)
+2020-02-25T00:36:02.5699187+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:36:02.5900462+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583762476  Responded with [200] in 33ms (a3023e6f)
+2020-02-25T00:36:02.5904324+02:00 80000040-0007-fe00-b63f-84710c7967bb [INF] Request finished in 34.1705ms 200 application/json (791a596a)
+2020-02-25T00:36:32.9288557+02:00 80000041-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583768106   (ca22a1cb)
+2020-02-25T00:36:32.9393265+02:00 80000041-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:32.9399395+02:00 80000041-0007-fe00-b63f-84710c7967bb [INF] Request finished in 11.4295ms 204  (791a596a)
+2020-02-25T00:36:33.0279378+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583768106 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:36:33.0280377+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:33.0282146+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:36:33.0283184+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:36:33.0421996+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:36:33.0434117+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:36:33.0435538+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 15.1928ms (afa2e885)
+2020-02-25T00:36:33.0435859+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:36:33.0444125+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583768106  Responded with [200] in 16ms (c19594b0)
+2020-02-25T00:36:33.0444952+02:00 80000042-0007-fe00-b63f-84710c7967bb [INF] Request finished in 16.5814ms 200 application/json (791a596a)
+2020-02-25T00:36:35.9841430+02:00 80000043-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583793471   (ca22a1cb)
+2020-02-25T00:36:35.9842313+02:00 80000043-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:35.9854996+02:00 80000043-0007-fe00-b63f-84710c7967bb [INF] Request finished in 1.1817ms 204  (791a596a)
+2020-02-25T00:36:36.0325964+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583793471 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:36:36.0327074+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:36:36.0328294+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:36:36.0329204+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:36:36.0553960+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:36:36.0564958+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:36:36.0566275+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 23.6689ms (afa2e885)
+2020-02-25T00:36:36.0566593+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:36:36.0759303+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583793471  Responded with [200] in 43ms (6c3a3aa2)
+2020-02-25T00:36:36.0761195+02:00 80000044-0007-fe00-b63f-84710c7967bb [INF] Request finished in 43.5377ms 200 application/json (791a596a)
+2020-02-25T00:37:30.0628861+02:00 80000045-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583848047   (ca22a1cb)
+2020-02-25T00:37:30.0629687+02:00 80000045-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:37:30.0631592+02:00 80000045-0007-fe00-b63f-84710c7967bb [INF] Request finished in 0.3233ms 204  (791a596a)
+2020-02-25T00:37:30.0979489+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583848047 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:37:30.0980369+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:37:30.0982591+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:37:30.0983989+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:37:30.1101961+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:37:30.1114092+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:37:30.1115637+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 13.1238ms (afa2e885)
+2020-02-25T00:37:30.1115905+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:37:30.1123306+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583848047  Responded with [200] in 14ms (11d4a805)
+2020-02-25T00:37:30.1124185+02:00 80000046-0007-fe00-b63f-84710c7967bb [INF] Request finished in 14.5102ms 200 application/json (791a596a)
+2020-02-25T00:38:36.4222386+02:00 80000047-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583916325   (ca22a1cb)
+2020-02-25T00:38:36.4223807+02:00 80000047-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:38:36.4227433+02:00 80000047-0007-fe00-b63f-84710c7967bb [INF] Request finished in 0.4263ms 204  (791a596a)
+2020-02-25T00:38:36.4524839+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583916325 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:38:36.4525775+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:38:36.4527648+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:38:36.4529222+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:38:36.4628243+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:38:36.4639110+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:38:36.4640335+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 11.0689ms (afa2e885)
+2020-02-25T00:38:36.4640575+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:38:36.4816392+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583916325  Responded with [200] in 28ms (cfe4e7fe)
+2020-02-25T00:38:36.4817752+02:00 80000048-0007-fe00-b63f-84710c7967bb [INF] Request finished in 29.3207ms 200 application/json (791a596a)
+2020-02-25T00:39:20.7843524+02:00 80000049-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583958364   (ca22a1cb)
+2020-02-25T00:39:20.7844736+02:00 80000049-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:39:21.1998713+02:00 80000049-0007-fe00-b63f-84710c7967bb [INF] Request finished in 0.9341ms 204  (791a596a)
+2020-02-25T00:39:21.2002564+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583958364 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:39:21.2003647+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:39:21.3223248+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:39:21.3255758+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:39:21.3382966+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:39:24.5159334+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:39:24.5166276+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 3190.9605ms (afa2e885)
+2020-02-25T00:39:24.5167041+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:39:24.8744112+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583958364  Responded with [200] in 3673ms (c55f80d9)
+2020-02-25T00:39:24.8750870+02:00 8000004a-0007-fe00-b63f-84710c7967bb [INF] Request finished in 3674.8257ms 200 application/json (791a596a)
+2020-02-25T00:40:21.7194296+02:00 8000004b-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583977267   (ca22a1cb)
+2020-02-25T00:40:21.7195104+02:00 8000004b-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:40:21.7197092+02:00 8000004b-0007-fe00-b63f-84710c7967bb [INF] Request finished in 0.3147ms 204  (791a596a)
+2020-02-25T00:40:21.7244995+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582583977267 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:40:21.7245680+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:40:21.7246680+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:40:21.7247580+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:40:21.7327371+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:40:21.7338487+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:40:21.7340448+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 9.245ms (afa2e885)
+2020-02-25T00:40:21.7340757+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:40:21.7547878+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582583977267  Responded with [200] in 30ms (5912615b)
+2020-02-25T00:40:21.7550350+02:00 8000004c-0007-fe00-b63f-84710c7967bb [INF] Request finished in 30.5876ms 200 application/json (791a596a)
+2020-02-25T00:42:56.9249066+02:00 800000a4-0002-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582584176887   (ca22a1cb)
+2020-02-25T00:42:56.9250944+02:00 800000a4-0002-f900-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:42:56.9273624+02:00 800000a4-0002-f900-b63f-84710c7967bb [INF] Request finished in 2.5429ms 204  (791a596a)
+2020-02-25T00:42:56.9418098+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetActiveForm/1?null&_=1582584176887 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T00:42:56.9419738+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T00:42:56.9422169+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (500cc934)
+2020-02-25T00:42:56.9423556+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Get\", controller = \"Form\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.FormViewModel Get(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T00:42:56.9534608+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T00:42:56.9547339+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.FormViewModel"'. (8a1b66c8)
+2020-02-25T00:42:56.9548843+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)" in 12.4904ms (afa2e885)
+2020-02-25T00:42:56.9549108+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.Get (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T00:42:56.9672718+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetActiveForm/1 ?null&_=1582584176887  Responded with [200] in 25ms (98a08a46)
+2020-02-25T00:42:56.9681119+02:00 8000002a-0000-fc00-b63f-84710c7967bb [INF] Request finished in 25.8065ms 200 application/json (791a596a)
+2020-02-25T15:58:14.6360901+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-02-25T15:58:16.2064036+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-25T15:58:16.2289294+02:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-25T15:58:16.2317182+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-02-25T15:58:16.2321195+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-02-25T15:58:16.2815690+02:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-02-25T15:58:16.3001132+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-02-25T15:58:17.1806400+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-25T15:58:17.1807918+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-25T15:58:17.1808369+02:00  [INF] Content root path: "D:\Asmaa\Venusera\BiddingEngine\Solution\200218\API\BiddingEngineAPI" (b5d60022)
+2020-02-25T15:58:17.3735308+02:00 8000001f-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-02-25T15:58:17.4989908+02:00 8000001f-0002-ff00-b63f-84710c7967bb [INF] Request finished in 130.5051ms 200 text/html;charset=utf-8 (791a596a)
+2020-02-25T15:58:17.9002161+02:00 80000020-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-02-25T15:58:18.0576648+02:00 80000020-0002-ff00-b63f-84710c7967bb [INF] Request finished in 157.8668ms 200 application/json;charset=utf-8 (791a596a)
+2020-02-25T16:00:05.4701625+02:00 80000017-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-25T16:00:05.4945493+02:00 80000017-0006-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-02-25T16:00:05.5076372+02:00 80000017-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:00:05.5117112+02:00 80000017-0006-fd00-b63f-84710c7967bb [INF] Request finished in 44.3883ms 204  (791a596a)
+2020-02-25T16:00:05.5196921+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 1098 (ca22a1cb)
+2020-02-25T16:00:05.5207064+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:00:06.4741288+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-25T16:00:06.6931168+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T16:00:06.9269938+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (8a1b66c8)
+2020-02-25T16:00:06.9504355+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 251.6232ms (afa2e885)
+2020-02-25T16:00:06.9505797+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T16:00:07.5198001+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"","nameEn":"","descr":"","requestType":0,"isActive":true,"fileds":[{"nameAr":"البلاد","nameEn":"البلاد","isRequried":false,"order":1,"FiledIndex":1,"isActive":true,"filedType":7,"hasParent":false,"hasChild":false,"parentIndex":0,"filedOptions":[{"nameAr":"مصر","nameEn":"مصر","optionIndex":0,"isActive":true,"hasParent":false,"hasChild":false,"parentOptionIndex":0},{"nameAr":"الكويت","nameEn":"الكويت","optionIndex":1,"isActive":true,"hasParent":false,"hasChild":false,"parentOptionIndex":0}]},{"nameAr":"المدبنة","nameEn":"المدبنة","isRequried":false,"order":2,"FiledIndex":2,"isActive":true,"filedType":7,"hasParent":true,"hasChild":false,"parentIndex":1,"filedOptions":[{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1},{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1},{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1}]}]} Responded with [400] in 1981ms (b4db3cae)
+2020-02-25T16:00:07.5548411+02:00 8000003e-0004-fb00-b63f-84710c7967bb [INF] Request finished in 2035.4351ms 400 application/json (791a596a)
+2020-02-25T16:00:49.7308262+02:00 80000018-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/CreateNewForm   (ca22a1cb)
+2020-02-25T16:00:49.7317347+02:00 80000018-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:00:49.7325472+02:00 80000018-0006-fd00-b63f-84710c7967bb [INF] Request finished in 1.8397ms 204  (791a596a)
+2020-02-25T16:00:49.7611884+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Form/CreateNewForm application/json; charset=utf-8 1254 (ca22a1cb)
+2020-02-25T16:00:49.7616025+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:00:49.7768732+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (500cc934)
+2020-02-25T16:00:49.7775043+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Route matched with "{action = \"CreateNewForm\", controller = \"Form\"}". Executing controller action with signature "Void CreateNewForm(BiddingEngineAPI.ApiModels.Users.FormCreateModel)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T16:01:28.7354072+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType]
+FROM [Forms] AS [f]" (0723d8ff)
+2020-02-25T16:01:29.3339979+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("302"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Forms] SET [IsActive] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2020-02-25T16:01:29.5003458+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("106"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Forms] ([CreateDate], [Description], [FormType], [IsActive], [NameAr], [NameEn], [RequestType], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Forms]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.6993933+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("69"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FormFileds] ([CreateDate], [FiledType], [FormId], [HasChild], [HasParent], [IsActive], [IsRequired], [NameAr], [NameEn], [Order], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [FormFileds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7193491+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FormFileds] ([CreateDate], [FiledType], [FormId], [HasChild], [HasParent], [IsActive], [IsRequired], [NameAr], [NameEn], [Order], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [FormFileds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7428169+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7474155+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7524966+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7548600+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7564548+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [FiledOptions] ([CreateDate], [FormFiledId], [HasChild], [HasParent], [IsActive], [NameAr], [NameEn], [ParentId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [FiledOptions]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2020-02-25T16:01:29.7574593+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)" in 39979.8192ms (afa2e885)
+2020-02-25T16:01:29.7575323+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.CreateNewForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T16:01:30.0096902+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Request: POST http localhost:5000/Api/Form/CreateNewForm  {"nameAr":"تستتتتتتتتتتت","nameEn":"تستتتتتتتتتتت","descr":"تستتتتتتتتتتتتستتتتتتتتتتتتستتتتتتتتتتتتستتتتتتتتتتت","requestType":0,"isActive":true,"fileds":[{"nameAr":"البلاد","nameEn":"البلاد","isRequried":false,"order":1,"FiledIndex":1,"isActive":true,"filedType":7,"hasParent":false,"hasChild":false,"parentIndex":0,"filedOptions":[{"nameAr":"مصر","nameEn":"مصر","optionIndex":0,"isActive":true,"hasParent":false,"hasChild":false,"parentOptionIndex":0},{"nameAr":"الكويت","nameEn":"الكويت","optionIndex":1,"isActive":true,"hasParent":false,"hasChild":false,"parentOptionIndex":0}]},{"nameAr":"المدبنة","nameEn":"المدبنة","isRequried":false,"order":2,"FiledIndex":2,"isActive":true,"filedType":7,"hasParent":true,"hasChild":false,"parentIndex":1,"filedOptions":[{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1},{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1},{"nameAr":"2222كويت","nameEn":"2222كويت","isActive":true,"hasParent":true,"hasChild":false,"parentOptionIndex":1}]}]} Responded with [200] in 40247ms (dd50ceb5)
+2020-02-25T16:01:30.0111954+02:00 8000003f-0004-fb00-b63f-84710c7967bb [INF] Request finished in 40250.1423ms 200 application/json (791a596a)
+2020-02-25T16:02:17.5905753+02:00 80000019-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Form/GetAllForm?formtype=1&null&_=1582639294834   (ca22a1cb)
+2020-02-25T16:02:17.5910462+02:00 80000019-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:02:17.5915620+02:00 80000019-0006-fd00-b63f-84710c7967bb [INF] Request finished in 1.1276ms 204  (791a596a)
+2020-02-25T16:02:17.5938446+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Form/GetAllForm?formtype=1&null&_=1582639294834 application/json; charset=utf-8  (ca22a1cb)
+2020-02-25T16:02:17.5942096+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-02-25T16:02:17.6073497+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (500cc934)
+2020-02-25T16:02:17.6468615+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllForm\", controller = \"Form\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.FormViewModel] GetAllForm(Int32)" on controller "BiddingEngineAPI.Controllers.FormController" ("BiddingEngineAPI"). (122b2fdf)
+2020-02-25T16:02:17.9447106+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[CreateDate], [f].[Description], [f].[FormType], [f].[IsActive], [f].[NameAr], [f].[NameEn], [f].[RequestType], [f].[UserType], [t].[Id], [t].[CreateDate], [t].[FiledType], [t].[FormId], [t].[HasChild], [t].[HasParent], [t].[IsActive], [t].[IsRequired], [t].[NameAr], [t].[NameEn], [t].[Order], [t].[ParentId], [t].[Id0], [t].[CreateDate0], [t].[FormFiledId], [t].[HasChild0], [t].[HasParent0], [t].[IsActive0], [t].[NameAr0], [t].[NameEn0], [t].[ParentId0]
+FROM [Forms] AS [f]
+LEFT JOIN (
+    SELECT [f0].[Id], [f0].[CreateDate], [f0].[FiledType], [f0].[FormId], [f0].[HasChild], [f0].[HasParent], [f0].[IsActive], [f0].[IsRequired], [f0].[NameAr], [f0].[NameEn], [f0].[Order], [f0].[ParentId], [f1].[Id] AS [Id0], [f1].[CreateDate] AS [CreateDate0], [f1].[FormFiledId], [f1].[HasChild] AS [HasChild0], [f1].[HasParent] AS [HasParent0], [f1].[IsActive] AS [IsActive0], [f1].[NameAr] AS [NameAr0], [f1].[NameEn] AS [NameEn0], [f1].[ParentId] AS [ParentId0]
+    FROM [FormFileds] AS [f0]
+    LEFT JOIN [FiledOptions] AS [f1] ON [f0].[Id] = [f1].[FormFiledId]
+) AS [t] ON [f].[Id] = [t].[FormId]
+ORDER BY [f].[Id], [t].[Id], [t].[Id0]" (0723d8ff)
+2020-02-25T16:02:17.9721562+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.FormViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-02-25T16:02:18.0334687+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)" in 386.413ms (afa2e885)
+2020-02-25T16:02:18.0335286+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.FormController.GetAllForm (BiddingEngineAPI)"' (99874f2b)
+2020-02-25T16:02:18.2400199+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Request: GET http localhost:5000/Api/Form/GetAllForm ?formtype=1&null&_=1582639294834  Responded with [200] in 645ms (a0177ea2)
+2020-02-25T16:02:18.2404491+02:00 8000001a-0006-fd00-b63f-84710c7967bb [INF] Request finished in 646.5969ms 200 application/json (791a596a)

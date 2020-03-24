@@ -1,0 +1,1135 @@
+2020-03-18T11:12:50.3106384+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T11:12:51.4819752+02:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T11:12:51.6137566+02:00  [INF] Executed DbCommand ("122"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T11:12:51.6186675+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T11:12:51.6195847+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T11:12:51.7053881+02:00  [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T11:12:51.7588045+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T11:12:51.8068590+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T11:12:52.2990211+02:00  [INF] Executed DbCommand ("161"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T11:12:52.3221707+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T11:12:52.3290395+02:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T11:12:53.8371204+02:00 80000097-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T11:12:53.8942606+02:00 80000097-0004-ff00-b63f-84710c7967bb [INF] Request finished in 59.3913ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T11:12:53.9262848+02:00 80000098-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-18T11:12:53.9704029+02:00 80000098-0004-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T11:12:53.9717278+02:00 80000098-0004-ff00-b63f-84710c7967bb [INF] Request finished in 45.449ms 200 text/css (791a596a)
+2020-03-18T11:12:54.2903597+02:00 80000099-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-18T11:12:54.2923953+02:00 80000099-0004-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T11:12:54.2931085+02:00 80000099-0004-ff00-b63f-84710c7967bb [INF] Request finished in 2.9984ms 200 image/png (791a596a)
+2020-03-18T11:12:54.3228922+02:00 8000009a-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T11:12:54.6703885+02:00 8000009a-0004-ff00-b63f-84710c7967bb [INF] Request finished in 347.6456ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T11:13:16.8858661+02:00 8000001c-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Users/Authenticate   (ca22a1cb)
+2020-03-18T11:13:16.8901799+02:00 8000001c-0007-fd00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T11:13:16.8930232+02:00 8000001c-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:16.8954079+02:00 8000001c-0007-fd00-b63f-84710c7967bb [INF] Request finished in 10.202ms 204  (791a596a)
+2020-03-18T11:13:16.8970827+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/Api/Users/Authenticate application/json; charset=utf-8 37 (ca22a1cb)
+2020-03-18T11:13:16.8980951+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:17.5131874+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.UsersController.Authenticate (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:13:17.5669375+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "BiddingEngineAPI.ApiModels.Users.UserWithToken Authenticate(BiddingEngineAPI.ApiModels.Users.AuthenticateModel)" on controller "BiddingEngineAPI.Controllers.UsersController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:13:18.2162778+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("145"ms) [Parameters=["@__model_Username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[UserType_Id], [u0].[UserType_Name]
+FROM [Users] AS [u]
+LEFT JOIN [UserTypes] AS [u0] ON [u].[UserType_Id] = [u0].[UserType_Id]
+WHERE [u].[UserName] = @__model_Username_0" (0723d8ff)
+2020-03-18T11:13:18.8864757+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"BiddingEngineAPI.ApiModels.Users.UserWithToken"'. (8a1b66c8)
+2020-03-18T11:13:18.9247102+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.UsersController.Authenticate (BiddingEngineAPI)" in 1351.7062ms (afa2e885)
+2020-03-18T11:13:18.9248785+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.UsersController.Authenticate (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:13:19.3020944+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/Api/Users/Authenticate  {"username":"asmaa","password":"123"} 
+                                                     Responded with [200] in 2336ms (eea0672c)
+2020-03-18T11:13:19.3054530+02:00 80000028-0003-fd00-b63f-84710c7967bb [INF] Request finished in 2408.7406ms 200 application/json (791a596a)
+2020-03-18T11:13:27.8798935+02:00 8000001d-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Requests/client/3?null&_=1584522807777   (ca22a1cb)
+2020-03-18T11:13:27.8808500+02:00 8000001d-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:27.8815663+02:00 8000001d-0007-fd00-b63f-84710c7967bb [INF] Request finished in 1.8044ms 204  (791a596a)
+2020-03-18T11:13:27.8824466+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Requests/client/3?null&_=1584522807777 application/json; charset=utf-8  (ca22a1cb)
+2020-03-18T11:13:27.8827060+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:28.0514100+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Successfully validated the token. (60169667)
+2020-03-18T11:13:28.0632371+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.RequestsController.GetAllRequestsByClient (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:13:28.0820170+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllRequestsByClient\", controller = \"Requests\"}". Executing controller action with signature "System.Linq.IQueryable`1[BiddingEngineAPI.ApiModels.Request.RequestListModel] GetAllRequestsByClient(Int32)" on controller "BiddingEngineAPI.Controllers.RequestsController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:13:28.5788133+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("292"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[CreateDate], [r].[FormId], [f].[NameAr] AS [FormNameAr], [f].[NameEn] AS [FormNameEn], [r].[Id], [r].[StatusId], [r].[UserId]
+FROM [Requests] AS [r]
+LEFT JOIN [Forms] AS [f] ON [r].[FormId] = [f].[Id]
+WHERE [r].[UserId] = @__userId_0
+ORDER BY [r].[CreateDate] DESC" (0723d8ff)
+2020-03-18T11:13:28.6183236+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Request.RequestListModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-18T11:13:28.6450273+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.RequestsController.GetAllRequestsByClient (BiddingEngineAPI)" in 562.7546ms (afa2e885)
+2020-03-18T11:13:28.6463036+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.RequestsController.GetAllRequestsByClient (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:13:28.7161377+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Requests/client/3 ?null&_=1584522807777  
+                                                     Responded with [200] in 832ms (38b9f285)
+2020-03-18T11:13:28.7241755+02:00 8000001e-0007-fd00-b63f-84710c7967bb [INF] Request finished in 841.5845ms 200 application/json (791a596a)
+2020-03-18T11:13:30.8310602+02:00 8000001f-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522810807   (ca22a1cb)
+2020-03-18T11:13:30.8318454+02:00 8000001f-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:30.8327329+02:00 8000001f-0007-fd00-b63f-84710c7967bb [INF] Request finished in 1.8234ms 204  (791a596a)
+2020-03-18T11:13:30.8336556+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522810807 application/json; charset=utf-8  (ca22a1cb)
+2020-03-18T11:13:30.8342755+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:13:30.8401449+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Successfully validated the token. (60169667)
+2020-03-18T11:13:30.8405585+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:13:30.8442688+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetServiceProviderUser\", controller = \"Users\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.UserChatViewModel] GetServiceProviderUser(Int32)" on controller "BiddingEngineAPI.Controllers.UsersController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:13:30.9008972+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("39"ms) [Parameters=["@__CurrentUserID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id]
+FROM [Users] AS [u]
+WHERE ([u].[Is_SProvider] = CAST(1 AS bit)) AND ([u].[User_Id] <> @__CurrentUserID_0)" (0723d8ff)
+2020-03-18T11:13:31.0727684+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:13:31.1648013+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:13:31.1674490+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:13:31.1693357+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.UserChatViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-18T11:13:31.2473929+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)" in 402.9042ms (afa2e885)
+2020-03-18T11:13:31.2475672+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:13:31.2761032+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Users/usertype/GetServiceProviderUser/3 ?null&_=1584522810807  
+                                                     Responded with [200] in 441ms (801229ae)
+2020-03-18T11:13:31.2766001+02:00 80000020-0007-fd00-b63f-84710c7967bb [INF] Request finished in 443.0456ms 200 application/json (791a596a)
+2020-03-18T11:13:31.5608006+02:00 8000009b-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2020-03-18T11:13:31.5710736+02:00 8000009b-0004-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/   
+                                                     Responded with [404] in 9ms (4d841c6b)
+2020-03-18T11:13:31.5718625+02:00 8000009b-0004-ff00-b63f-84710c7967bb [INF] Request finished in 11.1172ms 404 application/json (791a596a)
+2020-03-18T11:15:31.2769104+02:00 8000009d-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522927038   (ca22a1cb)
+2020-03-18T11:15:31.2774030+02:00 8000009d-0004-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:15:31.2780644+02:00 8000009d-0004-ff00-b63f-84710c7967bb [INF] Request finished in 4.5674ms 204  (791a596a)
+2020-03-18T11:15:31.2854047+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522927038 application/json; charset=utf-8  (ca22a1cb)
+2020-03-18T11:15:31.2857629+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:15:31.2883694+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Successfully validated the token. (60169667)
+2020-03-18T11:15:31.2888171+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:15:31.2895088+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetServiceProviderUser\", controller = \"Users\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.UserChatViewModel] GetServiceProviderUser(Int32)" on controller "BiddingEngineAPI.Controllers.UsersController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:15:31.3029887+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__CurrentUserID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id]
+FROM [Users] AS [u]
+WHERE ([u].[Is_SProvider] = CAST(1 AS bit)) AND ([u].[User_Id] <> @__CurrentUserID_0)" (0723d8ff)
+2020-03-18T11:15:31.3063118+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:15:31.3094616+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:15:31.3108916+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:15:31.3121736+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.UserChatViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-18T11:15:31.3312246+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)" in 41.5453ms (afa2e885)
+2020-03-18T11:15:31.3313053+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:15:31.3471048+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Users/usertype/GetServiceProviderUser/3 ?null&_=1584522927038  
+                                                     Responded with [200] in 61ms (9a451765)
+2020-03-18T11:15:31.3474701+02:00 80000021-0006-fa00-b63f-84710c7967bb [INF] Request finished in 62.1553ms 200 application/json (791a596a)
+2020-03-18T11:16:22.7523011+02:00 80000022-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522979994   (ca22a1cb)
+2020-03-18T11:16:22.7527409+02:00 80000022-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:16:22.7533771+02:00 80000022-0006-fa00-b63f-84710c7967bb [INF] Request finished in 1.2628ms 204  (791a596a)
+2020-03-18T11:16:22.7679619+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522979994 application/json; charset=utf-8  (ca22a1cb)
+2020-03-18T11:16:22.7722113+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:16:22.7739952+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Successfully validated the token. (60169667)
+2020-03-18T11:16:22.7743694+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:16:22.7748568+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetServiceProviderUser\", controller = \"Users\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.UserChatViewModel] GetServiceProviderUser(Int32)" on controller "BiddingEngineAPI.Controllers.UsersController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:16:22.7795749+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__CurrentUserID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id]
+FROM [Users] AS [u]
+WHERE ([u].[Is_SProvider] = CAST(1 AS bit)) AND ([u].[User_Id] <> @__CurrentUserID_0)" (0723d8ff)
+2020-03-18T11:16:22.7849857+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:22.7949680+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:22.7972033+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:22.7986043+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.UserChatViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-18T11:16:22.8292215+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)" in 54.1144ms (afa2e885)
+2020-03-18T11:16:22.8295263+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:16:22.8494287+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Users/usertype/GetServiceProviderUser/3 ?null&_=1584522979994  
+                                                     Responded with [200] in 76ms (499b7634)
+2020-03-18T11:16:22.8499020+02:00 80000023-0006-fa00-b63f-84710c7967bb [INF] Request finished in 82.0606ms 200 application/json (791a596a)
+2020-03-18T11:16:26.6791486+02:00 80000019-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522986659   (ca22a1cb)
+2020-03-18T11:16:26.6794034+02:00 80000019-0001-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:16:26.6799536+02:00 80000019-0001-fb00-b63f-84710c7967bb [INF] Request finished in 0.7977ms 204  (791a596a)
+2020-03-18T11:16:26.6852472+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/Api/Users/usertype/GetServiceProviderUser/3?null&_=1584522986659 application/json; charset=utf-8  (ca22a1cb)
+2020-03-18T11:16:26.7005591+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T11:16:26.7017143+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Successfully validated the token. (60169667)
+2020-03-18T11:16:26.7019669+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executing endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (500cc934)
+2020-03-18T11:16:26.7023926+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetServiceProviderUser\", controller = \"Users\"}". Executing controller action with signature "System.Collections.Generic.List`1[BiddingEngineAPI.ApiModels.Users.UserChatViewModel] GetServiceProviderUser(Int32)" on controller "BiddingEngineAPI.Controllers.UsersController" ("BiddingEngineAPI"). (122b2fdf)
+2020-03-18T11:16:26.7066644+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__CurrentUserID_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id]
+FROM [Users] AS [u]
+WHERE ([u].[Is_SProvider] = CAST(1 AS bit)) AND ([u].[User_Id] <> @__CurrentUserID_0)" (0723d8ff)
+2020-03-18T11:16:26.7090730+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:26.7110240+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:26.7122319+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[FromUserId], [c].[Isattached], [c].[MessageDate], [c].[MessageText], [c].[ToUserId], [c].[attchedType], [u].[User_Id], [u].[ActivationCode], [u].[IsActive], [u].[Is_Deleted], [u].[Is_Online], [u].[Is_SProvider], [u].[Password], [u].[RoleID], [u].[UserName], [u].[UserType_Id], [u0].[User_Id], [u0].[ActivationCode], [u0].[IsActive], [u0].[Is_Deleted], [u0].[Is_Online], [u0].[Is_SProvider], [u0].[Password], [u0].[RoleID], [u0].[UserName], [u0].[UserType_Id]
+FROM [ChatMessages] AS [c]
+LEFT JOIN [Users] AS [u] ON [c].[ToUserId] = [u].[User_Id]
+LEFT JOIN [Users] AS [u0] ON [c].[FromUserId] = [u0].[User_Id]" (0723d8ff)
+2020-03-18T11:16:26.7133923+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[BiddingEngineAPI.ApiModels.Users.UserChatViewModel, BiddingEngineAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-03-18T11:16:26.7228727+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed action "BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)" in 20.2486ms (afa2e885)
+2020-03-18T11:16:26.7229364+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Executed endpoint '"BiddingEngineAPI.Controllers.UsersController.GetServiceProviderUser (BiddingEngineAPI)"' (99874f2b)
+2020-03-18T11:16:26.7361812+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/Api/Users/usertype/GetServiceProviderUser/3 ?null&_=1584522986659  
+                                                     Responded with [200] in 35ms (0486e86d)
+2020-03-18T11:16:26.7368242+02:00 8000003d-0000-fa00-b63f-84710c7967bb [INF] Request finished in 52.59ms 200 application/json (791a596a)
+2020-03-18T11:16:27.6087941+02:00 80000053-0001-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2020-03-18T11:16:27.6270732+02:00 80000053-0001-fe00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/   
+                                                     Responded with [404] in 17ms (c0a69bf0)
+2020-03-18T11:16:27.6273140+02:00 80000053-0001-fe00-b63f-84710c7967bb [INF] Request finished in 18.5593ms 404 application/json (791a596a)
+2020-03-18T14:16:28.5743264+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T14:16:32.7388973+02:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T14:16:32.9584139+02:00  [INF] Executed DbCommand ("161"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T14:16:32.9635295+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T14:16:32.9643290+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T14:16:33.1300458+02:00  [INF] Executed DbCommand ("115"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T14:16:33.2066474+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T14:16:33.3834648+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T14:16:33.7621451+02:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:16:33.7773776+02:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:16:33.7820929+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:16:35.4656343+02:00 8000009f-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T14:16:35.6438812+02:00 8000009f-0004-ff00-b63f-84710c7967bb [INF] Request finished in 182.8477ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T14:16:36.0316938+02:00 800000a0-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-18T14:16:36.5231898+02:00 800000a0-0004-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T14:16:36.5235686+02:00 800000a0-0004-ff00-b63f-84710c7967bb [INF] Request finished in 492.0795ms 0 text/css (791a596a)
+2020-03-18T14:16:36.9331444+02:00 80000012-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-18T14:16:36.9541899+02:00 80000012-0002-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T14:16:36.9549216+02:00 80000012-0002-ff00-b63f-84710c7967bb [INF] Request finished in 22.0814ms 200 image/png (791a596a)
+2020-03-18T14:16:37.3938530+02:00 80000013-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T14:16:38.4718149+02:00 80000013-0002-ff00-b63f-84710c7967bb [INF] Request finished in 1078.6956ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T14:38:31.6552987+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T14:38:33.6770446+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T14:38:33.7798578+02:00  [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T14:38:33.7830985+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T14:38:33.7837516+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T14:38:33.9093090+02:00  [INF] Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T14:38:33.9521395+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T14:38:34.0366069+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T14:38:34.3513566+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:38:34.3567994+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:38:34.3767098+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T14:38:35.6628200+02:00 80000033-0004-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger   (ca22a1cb)
+2020-03-18T14:38:35.6628200+02:00 80000026-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T14:38:35.7624000+02:00 80000033-0004-f900-b63f-84710c7967bb [INF] Request finished in 104.2689ms 0  (791a596a)
+2020-03-18T14:38:35.9098829+02:00 80000026-0006-fa00-b63f-84710c7967bb [INF] Request finished in 252.474ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T14:38:35.9716125+02:00 80000027-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-18T14:38:36.0547957+02:00 80000027-0006-fa00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T14:38:36.0560012+02:00 80000027-0006-fa00-b63f-84710c7967bb [INF] Request finished in 84.4638ms 200 text/css (791a596a)
+2020-03-18T14:38:36.8212978+02:00 80000028-0006-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T14:38:36.9385269+02:00 80000028-0006-fa00-b63f-84710c7967bb [INF] Request finished in 117.9262ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T17:43:59.4632317+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T17:44:18.0427999+02:00  [INF] Executed DbCommand ("351"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T17:44:18.3681157+02:00  [INF] Executed DbCommand ("293"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T17:44:18.5999426+02:00  [INF] Executed DbCommand ("227"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T17:44:18.8157192+02:00  [INF] Executed DbCommand ("211"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T17:44:19.3388885+02:00  [INF] Executed DbCommand ("264"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T17:44:19.3971053+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T17:44:19.5623683+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T17:44:20.7913859+02:00  [INF] Executed DbCommand ("216"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T17:44:21.0658136+02:00  [INF] Executed DbCommand ("270"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T17:44:21.3174679+02:00  [INF] Executed DbCommand ("244"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T17:44:24.9735537+02:00 8000007b-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T17:44:26.6883369+02:00 8000007b-0007-ff00-b63f-84710c7967bb [INF] Request finished in 1727.8958ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T17:44:27.7476495+02:00 8000007c-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css   (ca22a1cb)
+2020-03-18T17:44:28.7418777+02:00 8000007c-0007-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T17:44:28.7421580+02:00 8000007c-0007-ff00-b63f-84710c7967bb [INF] Request finished in 995.956ms 0 text/css (791a596a)
+2020-03-18T17:44:29.1532072+02:00 8000007c-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png   (ca22a1cb)
+2020-03-18T17:44:29.3818691+02:00 8000007c-0004-fb00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2020-03-18T17:44:29.3826628+02:00 8000007c-0004-fb00-b63f-84710c7967bb [INF] Request finished in 229.3393ms 200 image/png (791a596a)
+2020-03-18T17:44:31.0260043+02:00 80000077-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T17:44:32.3362565+02:00 80000077-0006-fd00-b63f-84710c7967bb [INF] Request finished in 1310.1006ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T17:45:51.3212150+02:00 8000007e-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T17:45:51.3301912+02:00 8000007e-0004-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T17:45:53.4876033+02:00 8000007e-0004-fb00-b63f-84710c7967bb [INF] Executing endpoint '"/signalr/negotiate"' (500cc934)
+2020-03-18T17:45:53.5236141+02:00 8000007e-0004-fb00-b63f-84710c7967bb [INF] Executed endpoint '"/signalr/negotiate"' (99874f2b)
+2020-03-18T17:45:54.4221582+02:00 8000007e-0004-fb00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [405] in 2882ms (969ce996)
+2020-03-18T17:45:54.4734984+02:00 8000007e-0004-fb00-b63f-84710c7967bb [INF] Request finished in 3152.9948ms 405 application/json (791a596a)
+2020-03-18T20:20:55.7899390+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:20:59.4658862+02:00  [INF] Executed DbCommand ("417"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:20:59.8726844+02:00  [INF] Executed DbCommand ("381"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:21:00.1135452+02:00  [INF] Executed DbCommand ("232"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:21:00.5521476+02:00  [INF] Executed DbCommand ("432"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:21:00.9629756+02:00  [INF] Executed DbCommand ("326"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:21:01.0565315+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:21:01.2091899+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:21:01.8813138+02:00  [INF] Executed DbCommand ("264"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:21:02.1896337+02:00  [INF] Executed DbCommand ("292"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:21:02.4961964+02:00  [INF] Executed DbCommand ("288"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:21:03.9411076+02:00 80000027-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T20:21:04.3148505+02:00 80000027-0001-fb00-b63f-84710c7967bb [INF] Request finished in 382.2794ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T20:21:05.1686091+02:00 80000028-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T20:21:05.4854901+02:00 80000028-0001-fb00-b63f-84710c7967bb [INF] Request finished in 317.3221ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T20:21:42.8724852+02:00 80000080-0004-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T20:21:42.9696060+02:00 80000080-0004-fb00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T20:21:44.6367905+02:00 80000080-0004-fb00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 1641ms (c0e5fe71)
+2020-03-18T20:21:44.6558370+02:00 80000080-0004-fb00-b63f-84710c7967bb [INF] Request finished in 1784.5763ms 404 application/json (791a596a)
+2020-03-18T20:22:37.9596344+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:22:40.2264760+02:00  [INF] Executed DbCommand ("357"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:22:40.6166656+02:00  [INF] Executed DbCommand ("364"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:22:40.9037647+02:00  [INF] Executed DbCommand ("280"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:22:41.1454625+02:00  [INF] Executed DbCommand ("238"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:22:41.4598723+02:00  [INF] Executed DbCommand ("246"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:22:41.5110816+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:22:41.5399968+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:22:42.1307404+02:00  [INF] Executed DbCommand ("247"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:22:42.4381166+02:00  [INF] Executed DbCommand ("286"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:22:42.7449090+02:00  [INF] Executed DbCommand ("287"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:23:34.2791504+02:00  [FTL] Application startup exception (6c57a5ba)
+System.InvalidOperationException: The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the CORS policy by listing individual origins if credentials needs to be supported.
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.Build()
+   at BiddingEngineAPI.Startup.<>c.<Configure>b__5_2(CorsPolicyBuilder builder)
+   at Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(IApplicationBuilder app, Action`1 configurePolicy)
+   at BiddingEngineAPI.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-18T20:23:58.5951746+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:24:00.7111574+02:00  [INF] Executed DbCommand ("375"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:24:01.1051324+02:00  [INF] Executed DbCommand ("371"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:24:01.3892114+02:00  [INF] Executed DbCommand ("277"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:24:02.2074759+02:00  [INF] Executed DbCommand ("814"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:24:02.6194160+02:00  [INF] Executed DbCommand ("329"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:24:02.6871681+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:24:02.7204896+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:24:03.5382482+02:00  [INF] Executed DbCommand ("308"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:24:03.8460536+02:00  [INF] Executed DbCommand ("285"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:24:04.1538302+02:00  [INF] Executed DbCommand ("285"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:26:01.2751499+02:00  [FTL] Application startup exception (6c57a5ba)
+System.InvalidOperationException: The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the CORS policy by listing individual origins if credentials needs to be supported.
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.Build()
+   at BiddingEngineAPI.Startup.<>c.<Configure>b__5_2(CorsPolicyBuilder builder)
+   at Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(IApplicationBuilder app, Action`1 configurePolicy)
+   at BiddingEngineAPI.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-03-18T20:26:13.0664901+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:26:15.3226044+02:00  [INF] Executed DbCommand ("310"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:26:15.6567593+02:00  [INF] Executed DbCommand ("305"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:26:15.9412704+02:00  [INF] Executed DbCommand ("278"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:26:16.2197063+02:00  [INF] Executed DbCommand ("275"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:26:16.5616917+02:00  [INF] Executed DbCommand ("302"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:26:16.6162515+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:26:16.6455786+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:26:17.2907949+02:00  [INF] Executed DbCommand ("267"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:26:17.5804450+02:00  [INF] Executed DbCommand ("278"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:26:17.8878924+02:00  [INF] Executed DbCommand ("284"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:27:04.5623013+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:27:07.1866212+02:00  [INF] Executed DbCommand ("358"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:27:07.5798663+02:00  [INF] Executed DbCommand ("362"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:27:07.9611104+02:00  [INF] Executed DbCommand ("373"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:27:08.2733508+02:00  [INF] Executed DbCommand ("309"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:27:08.6787063+02:00  [INF] Executed DbCommand ("354"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:27:08.7333332+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:27:08.7596441+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:27:09.3988467+02:00  [INF] Executed DbCommand ("308"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:27:09.7013514+02:00  [INF] Executed DbCommand ("280"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:27:10.0194347+02:00  [INF] Executed DbCommand ("302"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:27:10.5856792+02:00 80000058-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T20:27:10.7323824+02:00 80000058-0003-fd00-b63f-84710c7967bb [INF] Request finished in 156.6871ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T20:27:11.0391675+02:00 80000059-0003-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T20:27:11.2978531+02:00 80000059-0003-fd00-b63f-84710c7967bb [INF] Request finished in 258.9386ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T20:27:29.6325391+02:00 8000000e-0002-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T20:27:29.6685879+02:00 8000000e-0002-f900-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T20:27:30.1020453+02:00 8000000e-0002-f900-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 413ms (78d7985d)
+2020-03-18T20:27:30.1039479+02:00 8000000e-0002-f900-b63f-84710c7967bb [INF] Request finished in 471.7963ms 404 application/json (791a596a)
+2020-03-18T20:36:39.7335615+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:37:36.8966378+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:37:38.3653673+02:00  [INF] Executed DbCommand ("107"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:37:38.8882093+02:00  [INF] Executed DbCommand ("505"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:37:38.8975794+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:37:38.8990932+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:37:40.0185883+02:00  [INF] Executed DbCommand ("1,081"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:37:40.0491105+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:37:40.0604879+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:37:40.5010370+02:00  [INF] Executed DbCommand ("283"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:37:40.6721069+02:00  [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:37:41.1730181+02:00  [INF] Executed DbCommand ("495"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:37:41.4124024+02:00 8000002c-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T20:37:41.4753371+02:00 8000002c-0001-fb00-b63f-84710c7967bb [INF] Request finished in 66.7773ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T20:37:41.6690160+02:00 8000002d-0001-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T20:37:41.9420598+02:00 8000002d-0001-fb00-b63f-84710c7967bb [INF] Request finished in 275.913ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T20:38:19.5449436+02:00 80000082-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T20:38:19.5569402+02:00 80000082-0003-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T20:38:20.1713349+02:00 80000082-0003-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 589ms (7e50374c)
+2020-03-18T20:38:20.1728821+02:00 80000082-0003-ff00-b63f-84710c7967bb [INF] Request finished in 628.6606ms 404 application/json (791a596a)
+2020-03-18T20:42:15.4954931+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:42:15.8849309+02:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:42:15.9457130+02:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:42:15.9717374+02:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T20:42:15.9726935+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T20:42:16.0185738+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T20:42:16.0682947+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T20:42:16.0973763+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T20:42:16.4661756+02:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:42:16.4786579+02:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:42:16.4856643+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T20:42:16.9007336+02:00 80000084-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T20:42:16.9839858+02:00 80000084-0003-ff00-b63f-84710c7967bb [INF] Request finished in 88.1451ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T20:42:17.1717838+02:00 80000085-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T20:42:17.3177256+02:00 80000085-0003-ff00-b63f-84710c7967bb [INF] Request finished in 145.9243ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T20:45:10.2661667+02:00 80000050-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T20:45:10.2783961+02:00 80000050-0001-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T20:45:10.7906423+02:00 80000050-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 485ms (2cbd9413)
+2020-03-18T20:45:10.7931431+02:00 80000050-0001-ff00-b63f-84710c7967bb [INF] Request finished in 527.7183ms 404 application/json (791a596a)
+2020-03-18T20:49:22.7374598+02:00 80000004-0001-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T20:49:22.7399202+02:00 80000004-0001-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T20:49:22.7433374+02:00 80000004-0001-fa00-b63f-84710c7967bb [INF] Request finished in 6.5983ms 204  (791a596a)
+2020-03-18T20:53:13.2488192+02:00 80000014-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T20:53:13.2518104+02:00 80000014-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T20:53:13.2655098+02:00 80000014-0004-fa00-b63f-84710c7967bb [INF] Request finished in 20.7272ms 204  (791a596a)
+2020-03-18T21:03:08.7165263+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:03:09.8019863+02:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:03:09.8591141+02:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:03:09.8648777+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:03:09.8655691+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:03:09.8895405+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:03:09.9120865+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:03:09.9386627+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:03:10.0868551+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:03:10.0923912+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:03:10.0955739+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:03:10.8124419+02:00 8000001b-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:03:11.1141769+02:00 8000001b-0004-fa00-b63f-84710c7967bb [INF] Request finished in 299.4018ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:03:11.6062570+02:00 8000001c-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:03:11.8301088+02:00 8000001c-0004-fa00-b63f-84710c7967bb [INF] Request finished in 225.352ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:04:41.7436903+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:04:41.7556185+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] No CORS policy found for the specified request. (712d2911)
+2020-03-18T21:04:41.7616382+02:00 80000046-0000-fe00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T21:04:42.0449970+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:04:42.0607327+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:04:42.4071382+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: OPTIONS http localhost:5000/mychathub/negotiate   
+                                                     Responded with [405] in 629ms (10eb335d)
+2020-03-18T21:04:42.4080970+02:00 80000046-0000-fe00-b63f-84710c7967bb [INF] Request finished in 665.9558ms 405 application/json (791a596a)
+2020-03-18T21:05:24.1913549+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:05:24.1926282+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] No CORS policy found for the specified request. (712d2911)
+2020-03-18T21:05:24.2127114+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:05:24.2130191+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:05:24.2155151+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: OPTIONS http localhost:5000/mychathub/negotiate   
+                                                     Responded with [405] in 21ms (0bc5ad59)
+2020-03-18T21:05:24.2159041+02:00 80000049-0002-fb00-b63f-84710c7967bb [INF] Request finished in 25.2087ms 405 application/json (791a596a)
+2020-03-18T21:09:02.9083667+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:09:03.3087373+02:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:09:03.3392892+02:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:09:03.3439820+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:09:03.3445575+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:09:03.3651441+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:09:03.3871510+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:09:03.4021526+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:09:03.5889598+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:09:03.5954272+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:09:03.6010915+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:09:03.8695303+02:00 80000099-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:09:03.9524157+02:00 80000099-0006-fd00-b63f-84710c7967bb [INF] Request finished in 87.0489ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:09:04.1353010+02:00 8000009a-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:09:04.2913705+02:00 8000009a-0006-fd00-b63f-84710c7967bb [INF] Request finished in 156.0347ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:09:09.1180140+02:00 80000017-0000-f700-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:09:09.1200340+02:00 80000017-0000-f700-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:09:09.1232053+02:00 80000017-0000-f700-b63f-84710c7967bb [INF] Request finished in 5.8039ms 204  (791a596a)
+2020-03-18T21:14:58.0530787+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:14:58.9656946+02:00  [INF] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:14:59.0399065+02:00  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:14:59.0460849+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:14:59.0471317+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:14:59.0752800+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:14:59.1027493+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:14:59.2586961+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:14:59.5501640+02:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:14:59.5573154+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:14:59.5617452+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:15:01.3199780+02:00 80000023-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:15:01.7228143+02:00 80000023-0004-fa00-b63f-84710c7967bb [INF] Request finished in 408.3642ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:15:02.8989210+02:00 80000024-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:15:03.0542892+02:00 80000024-0004-fa00-b63f-84710c7967bb [INF] Request finished in 155.9105ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:15:12.1272511+02:00 8000002d-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:15:12.1307913+02:00 8000002d-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution failed. (09b6f179)
+2020-03-18T21:15:12.1392306+02:00 8000002d-0007-fc00-b63f-84710c7967bb [INF] Request origin "http://localhost:6717" does not have permission to access the resource. (a03d560b)
+2020-03-18T21:15:12.1454056+02:00 8000002d-0007-fc00-b63f-84710c7967bb [INF] Request finished in 17.7612ms 204  (791a596a)
+2020-03-18T21:17:42.9170069+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:17:43.2516646+02:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:17:43.2825305+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:17:43.2860417+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:17:43.2870037+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:17:43.3060346+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:17:43.3278434+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:17:43.3424282+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:17:43.5256785+02:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:17:43.5377107+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:17:43.5459426+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:17:43.9188021+02:00 80000002-0007-f800-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:17:43.9857294+02:00 80000002-0007-f800-b63f-84710c7967bb [INF] Request finished in 69.7015ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:17:44.1498489+02:00 80000003-0007-f800-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:17:44.3282210+02:00 80000003-0007-f800-b63f-84710c7967bb [INF] Request finished in 178.3781ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:18:00.7897960+02:00 8000005f-0004-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:18:00.8001943+02:00 8000005f-0004-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:00.8044838+02:00 8000005f-0004-fc00-b63f-84710c7967bb [INF] Request finished in 15.3083ms 204  (791a596a)
+2020-03-18T21:18:00.8376263+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:18:00.8381179+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:00.8460473+02:00 80000007-0007-fa00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T21:18:04.2372835+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:18:04.2951655+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:18:05.2376433+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 4323ms (8f49e94c)
+2020-03-18T21:18:05.2397820+02:00 80000007-0007-fa00-b63f-84710c7967bb [INF] Request finished in 4402.3907ms 200 application/json (791a596a)
+2020-03-18T21:18:06.0128268+02:00 80000016-0002-f900-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:18:06.0140481+02:00 80000016-0002-f900-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:06.0158646+02:00 80000016-0002-f900-b63f-84710c7967bb [INF] Request finished in 3.5056ms 204  (791a596a)
+2020-03-18T21:18:06.0546079+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:18:06.0551044+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:06.0602374+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:18:06.0615706+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:18:06.0662624+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 10ms (1363b1b1)
+2020-03-18T21:18:06.0667220+02:00 8000001e-0004-f800-b63f-84710c7967bb [INF] Request finished in 12.3802ms 200 application/json (791a596a)
+2020-03-18T21:18:33.0842592+02:00 80000009-0007-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:18:33.0853989+02:00 80000009-0007-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:33.0863511+02:00 80000009-0007-fa00-b63f-84710c7967bb [INF] Request finished in 3.922ms 204  (791a596a)
+2020-03-18T21:18:33.0918064+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:18:33.0919011+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:18:33.1240564+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:18:33.1245498+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:18:33.1264720+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 34ms (901d2e29)
+2020-03-18T21:18:33.1266467+02:00 8000004d-0002-fb00-b63f-84710c7967bb [INF] Request finished in 38.1269ms 200 application/json (791a596a)
+2020-03-18T21:19:49.0262564+02:00 800000a7-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T21:19:49.1693865+02:00 800000a7-0005-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 137ms (c1a6913e)
+2020-03-18T21:19:49.3134914+02:00 800000a7-0005-ff00-b63f-84710c7967bb [INF] Request finished in 287.9096ms 404 application/json (791a596a)
+2020-03-18T21:21:51.5528019+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:21:52.4915735+02:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:21:52.5303311+02:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:21:52.5346578+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:21:52.5353966+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:21:52.5541298+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:21:52.5729096+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:21:52.6090557+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:21:52.7897246+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:21:52.7957674+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:21:52.7994988+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:21:53.4367282+02:00 8000003a-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:21:53.6590120+02:00 8000003a-0000-fc00-b63f-84710c7967bb [INF] Request finished in 228.5701ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:21:54.1896508+02:00 8000003b-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:21:54.3247450+02:00 8000003b-0000-fc00-b63f-84710c7967bb [INF] Request finished in 135.6572ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:22:05.0979040+02:00 8000000d-0006-f600-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:22:05.1021077+02:00 8000000d-0006-f600-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:22:05.1074547+02:00 8000000d-0006-f600-b63f-84710c7967bb [INF] Request finished in 10.0567ms 204  (791a596a)
+2020-03-18T21:22:05.1108235+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:22:05.1114742+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:22:05.1174439+02:00 8000003c-0000-fc00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T21:22:05.3609016+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:22:05.3689949+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:22:06.2255880+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 1075ms (0f732b27)
+2020-03-18T21:22:06.2835082+02:00 8000003c-0000-fc00-b63f-84710c7967bb [INF] Request finished in 1172.8193ms 200 application/json (791a596a)
+2020-03-18T21:26:08.6532702+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:26:08.9810514+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:26:09.0079552+02:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:26:09.0110635+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:26:09.0114935+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:26:09.0284652+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:26:09.0479305+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:26:09.0581199+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:26:09.2136489+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:26:09.2253056+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:26:09.2316916+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:26:09.6557559+02:00 80000060-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:26:09.7483651+02:00 80000060-0001-ff00-b63f-84710c7967bb [INF] Request finished in 96.6259ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:26:09.9513164+02:00 80000061-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:26:10.1237373+02:00 80000061-0001-ff00-b63f-84710c7967bb [INF] Request finished in 172.4691ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:26:13.7399585+02:00 80000031-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:26:13.7417269+02:00 80000031-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:13.7452215+02:00 80000031-0007-fc00-b63f-84710c7967bb [INF] Request finished in 5.4027ms 204  (791a596a)
+2020-03-18T21:26:13.7508305+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:26:13.7510684+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:13.7544428+02:00 80000062-0001-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T21:26:13.8713996+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:26:13.8802755+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:26:14.2626103+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 498ms (0ea59377)
+2020-03-18T21:26:14.2635888+02:00 80000062-0001-ff00-b63f-84710c7967bb [INF] Request finished in 512.9902ms 200 application/json (791a596a)
+2020-03-18T21:26:21.4380180+02:00 80000032-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:26:21.4388750+02:00 80000032-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:21.4399524+02:00 80000032-0007-fc00-b63f-84710c7967bb [INF] Request finished in 2.1209ms 204  (791a596a)
+2020-03-18T21:26:21.4419155+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:26:21.4421735+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:21.4459510+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:26:21.4468918+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:26:21.4492676+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 6ms (ad271268)
+2020-03-18T21:26:21.4495241+02:00 80000063-0001-ff00-b63f-84710c7967bb [INF] Request finished in 7.7214ms 200 application/json (791a596a)
+2020-03-18T21:26:22.2065003+02:00 80000033-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:26:22.2072306+02:00 80000033-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.2081570+02:00 80000033-0007-fc00-b63f-84710c7967bb [INF] Request finished in 1.8525ms 204  (791a596a)
+2020-03-18T21:26:22.2107823+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:26:22.2109559+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.2160594+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:26:22.2165360+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:26:22.2206213+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 7ms (1ccacd72)
+2020-03-18T21:26:22.2208346+02:00 80000064-0001-ff00-b63f-84710c7967bb [INF] Request finished in 10.2111ms 200 application/json (791a596a)
+2020-03-18T21:26:22.7196397+02:00 80000034-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:26:22.7202218+02:00 80000034-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.7214330+02:00 80000034-0007-fc00-b63f-84710c7967bb [INF] Request finished in 2.115ms 204  (791a596a)
+2020-03-18T21:26:22.7451074+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:26:22.7455646+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.7472297+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:26:22.7478786+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:26:22.7508068+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 4ms (df78f81e)
+2020-03-18T21:26:22.7510761+02:00 80000065-0001-ff00-b63f-84710c7967bb [INF] Request finished in 6.279ms 200 application/json (791a596a)
+2020-03-18T21:26:22.9796513+02:00 80000035-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:26:22.9801092+02:00 80000035-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.9812512+02:00 80000035-0007-fc00-b63f-84710c7967bb [INF] Request finished in 1.5761ms 204  (791a596a)
+2020-03-18T21:26:22.9846529+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:26:22.9849639+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:26:22.9864245+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:26:22.9873100+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:26:22.9912031+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 5ms (a4c551a9)
+2020-03-18T21:26:22.9917235+02:00 80000066-0001-ff00-b63f-84710c7967bb [INF] Request finished in 7.0239ms 200 application/json (791a596a)
+2020-03-18T21:33:57.6253567+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:33:57.9455687+02:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:33:57.9705388+02:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:33:57.9735996+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2020-03-18T21:33:57.9740945+02:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2020-03-18T21:33:58.0217901+02:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2020-03-18T21:33:58.0555686+02:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2020-03-18T21:33:58.0732228+02:00  [INF] Entity Framework Core "3.1.0" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-03-18T21:33:58.2398097+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTypes] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:33:58.2459631+02:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RequestTypes] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:33:58.2492986+02:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2020-03-18T21:33:58.4965894+02:00 80000097-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   (ca22a1cb)
+2020-03-18T21:33:58.5578847+02:00 80000097-0003-ff00-b63f-84710c7967bb [INF] Request finished in 62.8477ms 200 text/html;charset=utf-8 (791a596a)
+2020-03-18T21:33:58.7200627+02:00 80000098-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   (ca22a1cb)
+2020-03-18T21:33:58.8659336+02:00 80000098-0003-ff00-b63f-84710c7967bb [INF] Request finished in 145.7196ms 200 application/json;charset=utf-8 (791a596a)
+2020-03-18T21:34:20.9200407+02:00 8000003a-0004-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/mychathub/negotiate   (ca22a1cb)
+2020-03-18T21:34:20.9234458+02:00 8000003a-0004-fa00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:34:20.9272160+02:00 8000003a-0004-fa00-b63f-84710c7967bb [INF] Request finished in 8.7607ms 204  (791a596a)
+2020-03-18T21:34:20.9334877+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 POST http://localhost:5000/mychathub/negotiate text/plain;charset=UTF-8 0 (ca22a1cb)
+2020-03-18T21:34:20.9340199+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2020-03-18T21:34:20.9401810+02:00 80000099-0003-ff00-b63f-84710c7967bb [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2020-03-18T21:34:21.1421063+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] Executing endpoint '"/mychathub/negotiate"' (500cc934)
+2020-03-18T21:34:21.1586526+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] Executed endpoint '"/mychathub/negotiate"' (99874f2b)
+2020-03-18T21:34:21.6658624+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: POST http localhost:5000/mychathub/negotiate   
+                                                     Responded with [200] in 710ms (ee9ceecf)
+2020-03-18T21:34:21.6671122+02:00 80000099-0003-ff00-b63f-84710c7967bb [INF] Request finished in 734.5229ms 200 application/json (791a596a)
+2020-03-18T21:37:42.6285743+02:00 8000000b-0001-fa00-b63f-84710c7967bb [INF] Request starting HTTP/1.1 GET http://localhost:5000/signalr/negotiate?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]   (ca22a1cb)
+2020-03-18T21:37:42.7810410+02:00 8000000b-0001-fa00-b63f-84710c7967bb [INF] Source:[::1] 
+                                                     Request: GET http localhost:5000/signalr/negotiate ?clientProtocol=2.1&connectionData=[%7B%22Name%22:%22mychathub%22%7D]  
+                                                     Responded with [404] in 151ms (8f791fed)
+2020-03-18T21:37:42.8221801+02:00 8000000b-0001-fa00-b63f-84710c7967bb [INF] Request finished in 194.0409ms 404 application/json (791a596a)

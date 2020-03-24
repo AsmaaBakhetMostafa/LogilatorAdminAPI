@@ -1,0 +1,8 @@
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\obj\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.csprojAssemblyReference.cache
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\obj\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.AssemblyInfoInputs.cache
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\obj\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.AssemblyInfo.cs
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\bin\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.deps.json
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\bin\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.dll
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\bin\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.pdb
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\obj\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.dll
+D:\WorkSpace\API Template\Tasaloh-Development\Tasaloh-Development\TasalohWebAPI.EFCore\obj\Debug\netcoreapp3.0\TasalohWebAPI.EFCore.pdb
